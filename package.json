@@ -1,4 +1,18 @@
-"scripts": {
-  "start": "eleventy --serve",
-  "build": "eleventy"
+{
+  "name": "patternlibrarydemo",
+  "version": "1.0.0",
+  "description": "USWDS + Eleventy Pattern Library Demo",
+  "type": "commonjs",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "watch:sass": "sass src/assets/scss:src/assets/css --watch --load-path=node_modules/@uswds/uswds/packages --load-path=node_modules/@uswds/uswds/dist/scss/stylesheets"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "sass": "^1.97.3"
+  },
+  "dependencies": {
+    "@uswds/uswds": "^3.13.0"
+  }
 }

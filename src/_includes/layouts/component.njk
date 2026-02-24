@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <!-- USWDS CSS -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <style>
+    /* Optional spacing for component demos */
+    .component-demo {
+      margin-bottom: 2rem;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 1rem;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <main class="grid-container">
+    <h1>{{ title }}</h1>
+
+    <h2>Description</h2>
+    <p>{{ description }}</p>
+
+    <h2>Design</h2>
+    <div class="component-demo">
+      {{ content | safe }}
+    </div>
+  </main>
+</body>
+</html>

@@ -1,7 +1,10 @@
+// Optional theme overrides
 @use "uswds-core" with (
   $theme-show-notifications: false
 );
 
+// Import the full USWDS source bundle
 @use "uswds";
 
+// Your custom project styles
 @use "custom";

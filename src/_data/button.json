@@ -1,0 +1,5 @@
+[
+  { "label": "Primary", "classes": "usa-button" },
+  { "label": "Secondary", "classes": "usa-button usa-button--secondary" },
+  { "label": "Disabled", "classes": "usa-button", "disabled": true }
+]

@@ -2,52 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Button Component</title>
-  <!-- USWDS CSS -->
+  <title>Button</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <style>
-    /* Optional spacing for component demos */
-    .component-demo {
+    .component-preview {
       margin-bottom: 2rem;
     }
-    pre {
-      background-color: #f4f4f4;
-      padding: 1rem;
-      border-radius: 4px;
-      overflow-x: auto;
+    .variation-group {
+      margin-bottom: 1.5rem;
+    }
+    .variation-group button {
+      margin-right: 0.5rem;
     }
   </style>
 </head>
 <body>
   <main class="grid-container">
-    <h1>Button Component</h1>
+    <h1>Button</h1>
 
-    <h2>Description</h2>
-    <p></p>
+    
+      <p>Buttons communicate actions users can take.</p>
+    
 
-    <h2>Design</h2>
-    <div class="component-demo">
-      <p><button class="usa-button usa-button" type="button">Primary</button></p>
-<p><button class="usa-button usa-button--secondary" type="button">Secondary</button></p>
-<p><button class="usa-button usa-button--hover" type="button">Disabled</button></p>
-<h2>Code</h2>
-<pre><code>
-&lt;button class="usa-button" type="button" &gt;
-  Primary
-&lt;/button&gt;
-</code></pre>
-<pre><code>
-&lt;button class="usa-button--secondary" type="button" &gt;
-  Secondary
-&lt;/button&gt;
-</code></pre>
-<pre><code>
-&lt;button class="usa-button--hover" type="button" disabled&gt;
-  Disabled
-&lt;/button&gt;
-</code></pre>
+    <section class="component-preview">
+      <h2>Default</h2>
+<div class="variation-group">
+<p>&lt;button
+class=&quot;usa-button&quot;
+type=&quot;button&quot;</p>
+<blockquote></blockquote>
+<p>Primary
+</button></p>
+</div>
+<h2>Color Variants</h2>
+<div class="variation-group">
+<p>&lt;button
+class=&quot;usa-button--secondary&quot;
+type=&quot;button&quot;</p>
+<blockquote></blockquote>
+<p>Secondary
+</button></p>
+<p>&lt;button
+class=&quot;usa-button--accent-cool&quot;
+type=&quot;button&quot;</p>
+<blockquote></blockquote>
+<p>Accent Cool
+</button></p>
+</div>
+<h2>States</h2>
+<div class="variation-group">
+<p>&lt;button
+class=&quot;usa-button&quot;
+type=&quot;button&quot;
+disabled</p>
+<blockquote></blockquote>
+<p>Disabled
+</button></p>
+</div>
 
-    </div>
+    </section>
+
   </main>
 </body>
 </html>

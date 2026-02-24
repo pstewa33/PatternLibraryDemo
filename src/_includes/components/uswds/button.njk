@@ -1,1 +1,7 @@
-<button class="usa-button {{btn.classes}}" type="button">{{ btn.label | default('Click me') }}</button>
+<button
+  class="{{ classes | default('usa-button') }}"
+  type="button"
+  {% if disabled %}disabled{% endif %}
+>
+  {{ label | default("Button") }}
+</button>

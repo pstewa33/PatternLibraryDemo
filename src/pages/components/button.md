@@ -1,27 +1,40 @@
 ---
 layout: layouts/component.njk
-title: Button Component
+title: Button
 permalink: /components/button/
-buttons:
-  - label: Primary
-    classes: usa-button
-  - label: Secondary
-    classes: usa-button--secondary
-  - label: Disabled
-    classes: usa-button--hover
-    disabled: true
+description: Buttons communicate actions users can take.
+variants:
+  - title: Default
+    items:
+      - label: Primary
+        classes: usa-button
+  - title: Color Variants
+    items:
+      - label: Secondary
+        classes: usa-button--secondary
+      - label: Accent Cool
+        classes: usa-button--accent-cool
+  - title: States
+    items:
+      - label: Disabled
+        classes: usa-button
+        disabled: true
 ---
 
-{% for btn in buttons %}
-  {% include "components/uswds/button.njk" %}
-{% endfor %}
+{% for group in variants %}
+## {{ group.title }}
 
-## Code
+<div class="variation-group">
+  {% for btn in group.items %}
 
-{% for btn in buttons %}
-<pre><code>
-&lt;button class="{{ btn.classes | default('usa-button') }}" type="button" {% if btn.disabled %}disabled{% endif %}&gt;
-  {{ btn.label | default("Click me") }}
-&lt;/button&gt;
-</code></pre>
+    {# Set variables explicitly (SAFE approach) #}
+    {% set label = btn.label %}
+    {% set classes = btn.classes %}
+    {% set disabled = btn.disabled %}
+
+    {% include "components/uswds/button.njk" %}
+
+  {% endfor %}
+</div>
+
 {% endfor %}

@@ -3,18 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ title }}</title>
-  <!-- USWDS CSS -->
   <link rel="stylesheet" href="/assets/css/styles.css">
   <style>
-    /* Optional spacing for component demos */
-    .component-demo {
+    .component-preview {
       margin-bottom: 2rem;
     }
-    pre {
-      background-color: #f4f4f4;
-      padding: 1rem;
-      border-radius: 4px;
-      overflow-x: auto;
+    .variation-group {
+      margin-bottom: 1.5rem;
+    }
+    .variation-group button {
+      margin-right: 0.5rem;
     }
   </style>
 </head>
@@ -22,13 +20,14 @@
   <main class="grid-container">
     <h1>{{ title }}</h1>
 
-    <h2>Description</h2>
-    <p>{{ description }}</p>
+    {% if description %}
+      <p>{{ description }}</p>
+    {% endif %}
 
-    <h2>Design</h2>
-    <div class="component-demo">
+    <section class="component-preview">
       {{ content | safe }}
-    </div>
+    </section>
+
   </main>
 </body>
 </html>

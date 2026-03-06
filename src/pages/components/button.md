@@ -5,9 +5,11 @@ permalink: /components/button/
 description: Button component demos showing all variants and states.
 ---
 
-# Button Demos
+# Buttons
 
-Here are interactive previews of button variants:
+A button draws attention to important actions with a large selectable surface.
+
+## Component Preview
 
 <div class="grid-row grid-gap">
 {% for button in button.variants %}

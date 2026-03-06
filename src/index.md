@@ -1,9 +1,7 @@
 ---
-layout: layouts/base.njk
+layout: base.md
 title: Home
 ---
 
-{% block content %}
 <h1>Welcome to the Pattern Library Demo</h1>
 <p>This is using USWDS and Eleventy.</p>
-{% endblock %}

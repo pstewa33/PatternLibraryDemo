@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>{{ title | default("Pattern Library Demo") }}</title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
   <body>
-    {% block content %}{% endblock %}
+
+    {{ content }}
+
     <button class="usa-button">USWDS Button Test</button>
   </body>
 </html>

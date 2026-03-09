@@ -1,0 +1,51 @@
+- name: navy
+  value: "#096BA3"
+  hsla: "(202, 94, 64, 1)"
+- name: denim
+  value: "#07527D"
+  hsla: "(202, 94, 49, 1)"
+- name: midnight
+  value: "#053A59"
+  hsla: "(202, 94, 35, 1)"
+- name: sky
+  value: "#99D6FF"
+  hsla: "(204, 40, 100, 1)"
+- name: azure
+  value: "#0F9EFB"
+  hsla: "(204, 94, 98, 1)"
+- name: tea
+  value: "#C9E5C3"
+  hsla: "(109, 15 ,90, 1)"
+- name: lime
+  value: "#70DB58"
+  hsla: "(109, 60, 86, 1)"
+- name: emerald
+  value: "#31B912"
+  hsla: "(109, 90, 73, 1)"
+- name: forest
+  value: "#1E730B"
+  hsla: "(109, 90, 45, 1)"
+- name: hunter
+  value: "#0E3305"
+  hsla: "(109, 90, 20, 1)"
+- name: cloud
+  value: "#CFD8E5"
+  hsla: "(214, 10, 90, 1)"
+- name: fog
+  value: "#8D98A6"
+  hsla: "(214, 15, 65, 1)"
+- name: smoke
+  value: "#3D4044"
+  hsla: "(14, 10, 27, 1)"
+- name: charcoal
+  value: "#222426"
+  hsla: "(214, 10, 15, 1)"
+- name: lemon
+  value: "#EBCE42"
+  hsla: "(50, 72, 92, 1)"
+- name: pumpkin
+  value: "#F9A01B"
+  hsla: "(36, 89, 98, 1)"
+- name: scarlet
+  value: "#F04A3E"
+  hsla: "(4, 74, 94, 1)"

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Buttons</title>
-  <!-- USWDS CSS -->
-  <link rel="stylesheet" href="/assets/css/styles.css">
-</head>
-<body>
-  <main class="grid-container">
-    <h1>Buttons</h1>
+  <head>
+    <meta charset="UTF-8">
+    <title>Buttons</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/css/uswds.min.css">
+  </head>
+  <body class="usa-content">
+    <main class="usa-prose">
+      <h1>Buttons</h1>
+
+      <!-- Component content goes here -->
+      <h1>Buttons</h1>
 <p>A button draws attention to important actions with a large selectable surface.</p>
 <h2>Component Preview</h2>
 <div class="grid-row grid-gap">
@@ -55,6 +57,17 @@
     </button>
   </div>
 </div>
-  </main>
-</body>
+    </main>
+
+    <!-- USWDS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/js/uswds.min.js"></script>
+    <script>
+      // Wait until the DOM is ready, then initialize all USWDS components
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.Uswds) {
+          Uswds.initAll();
+        }
+      });
+    </script>
+  </body>
 </html>

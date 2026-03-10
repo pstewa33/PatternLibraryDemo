@@ -2,6 +2,7 @@
 layout: component.njk
 title: Accordion
 permalink: /components/accordion/
+tags: components
 accordion:
   - title: First Amendment
     open: false

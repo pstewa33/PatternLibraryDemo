@@ -1,5 +1,5 @@
 ---
 layout: base.md
 title: Templates Home
-permalink: /templates/
+permalink: /library/templates/
 ---

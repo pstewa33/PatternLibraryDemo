@@ -4,12 +4,14 @@
   "description": "USWDS + Eleventy Pattern Library Demo",
   "type": "commonjs",
   "scripts": {
-    "start": "eleventy --serve",
+    "sass": "sass --watch src/assets/scss/styles.scss:src/assets/css/styles.css --load-path=node_modules/@uswds/uswds/packages",
     "build": "eleventy",
-    "watch:sass": "sass src/assets/scss:src/assets/css --watch --load-path=node_modules/@uswds/uswds/packages --load-path=node_modules/@uswds/uswds/dist/scss/stylesheets"
+    "eleventy": "eleventy --serve",
+    "start": "concurrently \"npm run sass\" \"npm run eleventy\""
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
+    "concurrently": "^9.2.1",
     "sass": "^1.97.3"
   },
   "dependencies": {

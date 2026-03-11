@@ -8,7 +8,6 @@
   <body>
 
     {{ content }}
-
-    <button class="usa-button">USWDS Button Test</button>
+    
   </body>
 </html>

@@ -15,6 +15,14 @@ module.exports = function(eleventyConfig) {
     return md.render(value || "");
   });
 
+    // Case study collections
+  eleventyConfig.addCollection("components", function (collectionApi) {
+  return collectionApi.getFilteredByGlob("src/pages/components/*.md")
+    .sort((a, b) => {
+      return (a.data.order || 0) - (b.data.order || 0);
+    });
+  });
+
   // Optional: set default directory structure
   return {
     dir: {

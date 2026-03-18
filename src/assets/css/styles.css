@@ -33733,4 +33733,24 @@ h1 {
   color: #111;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.component-layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  margin-right: 4rem;
+}
+
 /*# sourceMappingURL=styles.css.map */

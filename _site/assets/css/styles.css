@@ -33746,11 +33746,22 @@ h1 {
   gap: 1rem;
 }
 
-.component-layout {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 1rem;
-  margin-right: 4rem;
+.sidebar-nav {
+  position: sticky;
+  top: 2rem;
+}
+
+.usa-accordion__content {
+  padding: 1rem;
+}
+
+.usa-accordion__content p {
+  margin-bottom: 0.5rem;
+}
+
+.usa-accordion__content {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/css/uswds.min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
-  <body class="usa-content">
+  <body class="page-content">
     <div class="navbar">
       <div class="usa-logo" id="basic-logo">
         <a href="/"><em class="usa-logo__text">USWDS Component Library</em></a>
@@ -16,42 +16,46 @@
         <li><a class="nav-link" href="/library/templates/">Templates</a></li>
       </ul>
     </div>
-    <main class="usa-prose component-layout">
-      <div class="sidebar">
-        <ul class="sidebar-nav">
-          
-            <li><a href="/components/button/">Buttons</a></li>
-          
-            <li><a href="/components/accordion/">Accordion</a></li>
-          
-            <li><a href="/components/alert/">ALert</a></li>
-          
-            <li><a href="/components/banner/">Banner</a></li>
-          
-            <li><a href="/components/breadcrumb/">Breadcrumb</a></li>
-          
-            <li><a href="/components/card/">Card</a></li>
-          
-            <li><a href="/components/footer/">Footer</a></li>
-          
-            <li><a href="/components/header/">Header</a></li>
-          
-            <li><a href="/components/identifier/">Identifier</a></li>
-          
-            <li><a href="/components/in-page-nav/">In-page Navigation</a></li>
-          
-            <li><a href="/components/search/">Search</a></li>
-          
-            <li><a href="/components/side-navigation/">Search</a></li>
-          
-            <li><a href="/library/components/">Components Home</a></li>
-          
-        </ul>
-      </div>
-      <div class="main-content">
-        <h1>Accordion</h1>
-        <!-- Component content goes here -->
-        <div class="usa-accordion">
+    <div class="grid-container-widescreen">
+      <div class="grid-row grid-gap">
+        <aside class="tablet:grid-col-3">
+          <ul class="sidebar-nav">
+            
+              <li><a href="/components/button/">Buttons</a></li>
+            
+              <li><a href="/components/accordion/">Accordion</a></li>
+            
+              <li><a href="/components/alert/">ALert</a></li>
+            
+              <li><a href="/components/banner/">Banner</a></li>
+            
+              <li><a href="/components/breadcrumb/">Breadcrumb</a></li>
+            
+              <li><a href="/components/card/">Card</a></li>
+            
+              <li><a href="/components/footer/">Footer</a></li>
+            
+              <li><a href="/components/header/">Header</a></li>
+            
+              <li><a href="/components/identifier/">Identifier</a></li>
+            
+              <li><a href="/components/in-page-nav/">In-page Navigation</a></li>
+            
+              <li><a href="/components/search/">Search</a></li>
+            
+              <li><a href="/components/side-navigation/">Search</a></li>
+            
+              <li><a href="/library/components/">Components Home</a></li>
+            
+          </ul>
+        </aside>
+        <main class="tablet:grid-col-9">
+          <h1>Accordion</h1>
+          <!-- Component content goes here -->
+          <p>An accordion is a list of headers that hide or reveal additional content when selected.</p>
+<h2>Component Preview</h2>
+<h3>Default</h3>
+<div class="usa-accordion">
   <h4 class="usa-accordion__heading">
     <button
       type="button"
@@ -62,7 +66,7 @@
       First Amendment
     </button>
   </h4>
-  <div id="a1" class="usa-accordion__content usa-prose">
+  <div id="a1" class="usa-accordion__content">
     <p>
       Congress shall make no law respecting an establishment of religion, or
       prohibiting the free exercise thereof; or abridging the freedom of speech,
@@ -150,8 +154,15 @@
     </p>
   </div>
 </div>
+<h3>Borderless</h3>
+<h3>Bordered</h3>
+<h3>Multiselectable</h3>
+<h2>Example Code</h2>
+<h2>Guidance</h2>
+
+        </main>
       </div>
-    </main>
+    </div>
 
     <!-- USWDS JS -->
     <script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/js/uswds.min.js"></script>

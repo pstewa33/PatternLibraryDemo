@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/css/uswds.min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
-  <body class="usa-content">
+  <body class="page-content">
     <div class="navbar">
       <div class="usa-logo" id="basic-logo">
         <a href="/"><em class="usa-logo__text">USWDS Component Library</em></a>
@@ -16,44 +16,216 @@
         <li><a class="nav-link" href="/library/templates/">Templates</a></li>
       </ul>
     </div>
-    <main class="usa-prose component-layout">
-      <div class="sidebar">
-        <ul class="sidebar-nav">
-          
-            <li><a href="/components/button/">Buttons</a></li>
-          
-            <li><a href="/components/accordion/">Accordion</a></li>
-          
-            <li><a href="/components/alert/">ALert</a></li>
-          
-            <li><a href="/components/banner/">Banner</a></li>
-          
-            <li><a href="/components/breadcrumb/">Breadcrumb</a></li>
-          
-            <li><a href="/components/card/">Card</a></li>
-          
-            <li><a href="/components/footer/">Footer</a></li>
-          
-            <li><a href="/components/header/">Header</a></li>
-          
-            <li><a href="/components/identifier/">Identifier</a></li>
-          
-            <li><a href="/components/in-page-nav/">In-page Navigation</a></li>
-          
-            <li><a href="/components/search/">Search</a></li>
-          
-            <li><a href="/components/side-navigation/">Search</a></li>
-          
-            <li><a href="/library/components/">Components Home</a></li>
-          
-        </ul>
+    <div class="grid-container-widescreen">
+      <div class="grid-row grid-gap">
+        <aside class="tablet:grid-col-3">
+          <ul class="sidebar-nav">
+            
+              <li><a href="/components/button/">Buttons</a></li>
+            
+              <li><a href="/components/accordion/">Accordion</a></li>
+            
+              <li><a href="/components/alert/">ALert</a></li>
+            
+              <li><a href="/components/banner/">Banner</a></li>
+            
+              <li><a href="/components/breadcrumb/">Breadcrumb</a></li>
+            
+              <li><a href="/components/card/">Card</a></li>
+            
+              <li><a href="/components/footer/">Footer</a></li>
+            
+              <li><a href="/components/header/">Header</a></li>
+            
+              <li><a href="/components/identifier/">Identifier</a></li>
+            
+              <li><a href="/components/in-page-nav/">In-page Navigation</a></li>
+            
+              <li><a href="/components/search/">Search</a></li>
+            
+              <li><a href="/components/side-navigation/">Search</a></li>
+            
+              <li><a href="/library/components/">Components Home</a></li>
+            
+          </ul>
+        </aside>
+        <main class="tablet:grid-col-9">
+          <h1>Card</h1>
+          <!-- Component content goes here -->
+          <h2>Component Preview</h2>
+<h3>Default</h3>
+<h3 class="site-preview-heading">Default card</h3>
+<ul class="usa-card-group">
+  <li class="usa-card tablet-lg:grid-col-6 widescreen:grid-col-4">
+    <div class="usa-card__container">
+      <div class="usa-card__header">
+        <h4 class="usa-card__heading">Card</h4>
       </div>
-      <div class="main-content">
-        <h1>Card</h1>
-        <!-- Component content goes here -->
-        
+      <div class="usa-card__body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+          tenetur quo cupiditate, eaque qui officia recusandae.
+        </p>
       </div>
-    </main>
+      <div class="usa-card__footer">
+        <a href="#" class="usa-button">Visit Florida Keys</a>
+      </div>
+    </div>
+  </li>
+  <li class="usa-card tablet-lg:grid-col-6 widescreen:grid-col-4">
+    <div class="usa-card__container">
+      <div class="usa-card__header">
+        <h4 class="usa-card__heading">Card with Media</h4>
+      </div>
+      <div class="usa-card__media">
+        <div class="usa-card__img">
+          <img
+            src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+            alt="A placeholder image"
+          />
+        </div>
+      </div>
+      <div class="usa-card__body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+          tenetur quo cupiditate, eaque qui officia recusandae.
+        </p>
+      </div>
+      <div class="usa-card__footer">
+        <a href="#" class="usa-button">Visit Florida Keys</a>
+      </div>
+    </div>
+  </li>
+  <li class="usa-card tablet-lg:grid-col-6 widescreen:grid-col-4 usa-card--header-first">
+    <div class="usa-card__container">
+      <div class="usa-card__header">
+        <h4 class="usa-card__heading">Media with header first</h4>
+      </div>
+      <div class="usa-card__media usa-card__media--exdent">
+        <div class="usa-card__img">
+          <img
+            src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+            alt="A placeholder image"
+          />
+        </div>
+      </div>
+      <div class="usa-card__body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          possimus similique nemo odit doloremque laudantium?
+        </p>
+      </div>
+      <div class="usa-card__footer">
+        <a href="#" class="usa-button">Visit Florida Keys</a>
+      </div>
+    </div>
+  </li>
+  <li class="usa-card tablet-lg:grid-col-6 widescreen:grid-col-4">
+    <div class="usa-card__container">
+      <div class="usa-card__header">
+        <h4 class="usa-card__heading">Inset media</h4>
+      </div>
+      <div class="usa-card__media usa-card__media--inset">
+        <div class="usa-card__img">
+          <img
+            src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+            alt="A placeholder image"
+          />
+        </div>
+      </div>
+      <div class="usa-card__body">
+        <p>
+          Etiam vitae sodales metus. Fusce id orci dignissim, efficitur risus
+          eget, tempus odio. Donec lectus ante, auctor eget cursus sed,
+          convallis quis magna. Orci varius natoque penatibus et magnis dis
+          parturient montes, nascetur ridiculus mus. Mauris mattis tellus
+          bibendum aliquet malesuada.
+        </p>
+      </div>
+      <div class="usa-card__footer">
+        <a href="#" class="usa-button">Visit Florida Keys</a>
+      </div>
+    </div>
+  </li>
+  <li class="usa-card tablet-lg:grid-col-6 widescreen:grid-col-4">
+    <div class="usa-card__container">
+      <div class="usa-card__header">
+        <h4 class="usa-card__heading">Exdent media</h4>
+      </div>
+      <div class="usa-card__media usa-card__media--exdent">
+        <div class="usa-card__img">
+          <img
+            src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+            alt="A placeholder image"
+          />
+        </div>
+      </div>
+      <div class="usa-card__body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          possimus similique nemo odit doloremque laudantium?
+        </p>
+      </div>
+      <div class="usa-card__footer">
+        <a href="#" class="usa-button">Visit Florida Keys</a>
+      </div>
+    </div>
+  </li>
+</ul>
+<h3 class="site-preview-heading">Flag layout card</h3>
+<ul class="usa-card-group">
+  <li class="usa-card usa-card--flag flex-1">
+    <div class="usa-card__container">
+      <div class="usa-card__header">
+        <h4 class="usa-card__heading">Default flag</h4>
+      </div>
+      <div class="usa-card__media">
+        <div class="usa-card__img">
+          <img
+            src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+            alt="A placeholder image"
+          />
+        </div>
+      </div>
+      <div class="usa-card__body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="usa-card__footer">
+        <a href="#" class="usa-button">Visit Florida Keys</a>
+      </div>
+    </div>
+  </li>
+  <li class="usa-card usa-card--flag flex-1 usa-card--media-right">
+    <div class="usa-card__container">
+      <div class="usa-card__header">
+        <h4 class="usa-card__heading">Flag media right inset</h4>
+      </div>
+      <div class="usa-card__media usa-card__media--inset">
+        <div class="usa-card__img">
+          <img
+            src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+            alt="A placeholder image"
+          />
+        </div>
+      </div>
+      <div class="usa-card__body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="usa-card__footer">
+        <a href="#" class="usa-button">Visit Florida Keys</a>
+      </div>
+    </div>
+  </li>
+</ul>
+<h3>Borderless</h3>
+<h3>Bordered</h3>
+<h3>Multiselectable</h3>
+<h2>Example Code</h2>
+<h2>Guidance</h2>
+
+        </main>
+      </div>
+    </div>
 
     <!-- USWDS JS -->
     <script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/js/uswds.min.js"></script>

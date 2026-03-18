@@ -6,9 +6,7 @@ description: Button component demos showing all variants and states.
 tags: components
 ---
 
-# Buttons
-
-A button draws attention to important actions with a large selectable surface.
+{{ description }}
 
 ## Component Preview
 
@@ -22,3 +20,7 @@ A button draws attention to important actions with a large selectable surface.
   </div>
 {% endfor %}
 </div>
+
+## Example Code
+
+## Guidance

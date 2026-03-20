@@ -11,14 +11,8 @@ tags: components
 
 ### Default
 
-{% include "components/uswds/card.html" %}
+{% include "components/uswds/card/card-default.html" %}
 
-### Borderless
+### Flag Layout
 
-### Bordered
-
-### Multiselectable
-
-## Example Code
-
-## Guidance
+{% include "components/uswds/card/card-flag.html" %}

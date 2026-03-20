@@ -34,15 +34,17 @@ accordion:
 
 ## Component Preview
 
-### Default
-
-{% include "components/uswds/accordion.html" %}
-
 ### Borderless
+
+{% include "components/uswds/accordion/accordion-borderless.html" %}
 
 ### Bordered
 
+{% include "components/uswds/accordion/accordion-bordered.html" %}
+
 ### Multiselectable
+
+{% include "components/uswds/accordion/accordion-multiselect.html" %}
 
 ## Example Code
 

@@ -33819,6 +33819,7 @@ h1 {
 .sidebar-nav a.active {
   font-weight: bold;
   color: #005ea2; /* USWDS link highlight */
+  background-color: #e5e7eb;
 }
 
 /*# sourceMappingURL=styles.css.map */

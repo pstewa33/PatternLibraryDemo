@@ -27,8 +27,66 @@
         </aside>
         <main class="tablet:grid-col-9">
           <h1>{{ title }}</h1>
-          <!-- Component content goes here -->
-          {{ content | safe }}
+          <!-- Component preview -->
+          {% if component %}
+            <div class="component-preview">
+              {% include component %}
+            </div>
+            <!-- Component source code -->
+            {% set accordionId = "code-" + title | slug %}
+            <div class="usa-accordion code-example">
+              <h4 class="usa-accordion__heading">
+                <button
+                  type="button"
+                  class="usa-accordion__button"
+                  aria-expanded="false"
+                  aria-controls="{{ accordionId }}"
+                >
+                  View code
+                </button>
+              </h4>
+              <div id="{{ accordionId }}" class="usa-accordion__content usa-prose">
+                <pre><code class="language-html">
+                  {{ component | rawFile | escape }}
+                </code></pre>
+              </div>
+            </div>
+            {% if variations %}
+              {% for variation in variations %}
+              <section class="component-variation">
+                <h2>{{ variation.name }}</h2>
+
+                <!-- Preview -->
+                <div class="component-preview">
+                  {% include variation.file %}
+                </div>
+
+                <!-- Accordion Code -->
+                {% set accordionId = (title + "-" + variation.name) | slug %}
+
+                <div class="usa-accordion code-example">
+                  <h4 class="usa-accordion__heading">
+                    <button
+                      type="button"
+                      class="usa-accordion__button"
+                      aria-expanded="false"
+                      aria-controls="{{ accordionId }}"
+                    >
+                      View code
+                    </button>
+                  </h4>
+                  <div id="{{ accordionId }}" class="usa-accordion__content usa-prose">
+                    <pre><code class="language-html">
+                      {{ variation.file | rawFile | escape }}
+                    </code></pre>
+                  </div>
+                </div>
+              </section>
+            {% endfor %}
+          {% endif %}
+          {% else %}
+            <p style="color:red;">No component path provided</p>
+          {% endif %}
         </main>
       </div>
     </div>

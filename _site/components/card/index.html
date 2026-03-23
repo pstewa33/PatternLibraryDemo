@@ -51,10 +51,10 @@
         </aside>
         <main class="tablet:grid-col-9">
           <h1>Card</h1>
-          <!-- Component content goes here -->
-          <h2>Component Preview</h2>
-<h3>Default</h3>
-<div class="grid-container">
+          <!-- Component preview -->
+          
+            <div class="component-preview">
+              <div class="grid-container">
     <div class="grid-row grid-gap">
         <div class="tablet:grid-col-6 desktop:grid-col-4">
             <div class="usa-card">
@@ -175,51 +175,270 @@
         </div>
     </div>
 </div>
-<h3>Flag Layout</h3>
-<ul class="usa-card-group">
-  <li class="usa-card--flag flex-1">
-    <div class="usa-card__container">
-      <div class="usa-card__header">
-        <h4 class="usa-card__heading">Default flag</h4>
-      </div>
-      <div class="usa-card__media">
-        <div class="usa-card__img">
-          <img
-            src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
-            alt="A placeholder image"
-          />
-        </div>
-      </div>
-      <div class="usa-card__body">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="usa-card__footer">
-        <a href="#" class="usa-button">Visit Florida Keys</a>
-      </div>
-    </div>
-  </li>
-  <li class="usa-card--flag flex-1 usa-card--media-right">
-    <div class="usa-card__container">
-      <div class="usa-card__header">
-        <h4 class="usa-card__heading">Flag media right inset</h4>
-      </div>
-      <div class="usa-card__media usa-card__media--inset">
-        <div class="usa-card__img">
-          <img
-            src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
-            alt="A placeholder image"
-          />
-        </div>
-      </div>
-      <div class="usa-card__body">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="usa-card__footer">
-        <a href="#" class="usa-button">Visit Florida Keys</a>
-      </div>
-    </div>
-  </li>
-</ul>
+            </div>
+            <!-- Component source code -->
+            
+            <div class="usa-accordion code-example">
+              <h4 class="usa-accordion__heading">
+                <button
+                  type="button"
+                  class="usa-accordion__button"
+                  aria-expanded="false"
+                  aria-controls="code-card"
+                >
+                  View code
+                </button>
+              </h4>
+              <div id="code-card" class="usa-accordion__content usa-prose">
+                <pre><code class="language-html">
+                  &lt;div class=&quot;grid-container&quot;&gt;
+    &lt;div class=&quot;grid-row grid-gap&quot;&gt;
+        &lt;div class=&quot;tablet:grid-col-6 desktop:grid-col-4&quot;&gt;
+            &lt;div class=&quot;usa-card&quot;&gt;
+                &lt;div class=&quot;usa-card__container&quot;&gt;
+                    &lt;div class=&quot;usa-card__header&quot;&gt;
+                        &lt;h4 class=&quot;usa-card__heading&quot;&gt;Card&lt;/h4&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;usa-card__body&quot;&gt;
+                        &lt;p&gt;
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+                            tenetur quo cupiditate, eaque qui officia recusandae.
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;usa-card__footer&quot;&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;usa-button&quot;&gt;Visit Florida Keys&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;tablet:grid-col-6 desktop:grid-col-4&quot;&gt;
+            &lt;div class=&quot;usa-card&quot;&gt;
+                &lt;div class=&quot;usa-card__container&quot;&gt;
+                    &lt;div class=&quot;usa-card__header&quot;&gt;
+                        &lt;h4 class=&quot;usa-card__heading&quot;&gt;Card with Media&lt;/h4&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;usa-card__media&quot;&gt;
+                        &lt;div class=&quot;usa-card__img&quot;&gt;
+                            &lt;img src=&quot;https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg&quot;
+                            alt=&quot;A placeholder image&quot;/&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;usa-card__body&quot;&gt;
+                        &lt;p&gt;
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+                            tenetur quo cupiditate, eaque qui officia recusandae.
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;usa-card__footer&quot;&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;usa-button&quot;&gt;Visit Florida Keys&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;tablet:grid-col-6 desktop:grid-col-4 usa-card--header-first&quot;&gt;
+            &lt;div class=&quot;usa-card&quot;&gt;
+                &lt;div class=&quot;usa-card__container&quot;&gt;
+                    &lt;div class=&quot;usa-card__header&quot;&gt;
+                        &lt;h4 class=&quot;usa-card__heading&quot;&gt;Media with header first&lt;/h4&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;usa-card__media usa-card__media--exdent&quot;&gt;
+                        &lt;div class=&quot;usa-card__img&quot;&gt;
+                            &lt;img src=&quot;https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg&quot;
+                            alt=&quot;A placeholder image&quot;/&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;usa-card__body&quot;&gt;
+                        &lt;p&gt;
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+                            tenetur quo cupiditate, eaque qui officia recusandae.
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;usa-card__footer&quot;&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;usa-button&quot;&gt;Visit Florida Keys&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;tablet:grid-col-6 desktop:grid-col-4&quot;&gt;
+            &lt;div class=&quot;usa-card__container&quot;&gt;
+                &lt;div class=&quot;usa-card__header&quot;&gt;
+                    &lt;h4 class=&quot;usa-card__heading&quot;&gt;Inset media&lt;/h4&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;usa-card__media usa-card__media--inset&quot;&gt;
+                    &lt;div class=&quot;usa-card__img&quot;&gt;
+                    &lt;img
+                        src=&quot;https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg&quot;
+                        alt=&quot;A placeholder image&quot;
+                    /&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;usa-card__body&quot;&gt;
+                    &lt;p&gt;
+                    Etiam vitae sodales metus. Fusce id orci dignissim, efficitur risus
+                    eget, tempus odio. Donec lectus ante, auctor eget cursus sed,
+                    convallis quis magna. Orci varius natoque penatibus et magnis dis
+                    parturient montes, nascetur ridiculus mus. Mauris mattis tellus
+                    bibendum aliquet malesuada.
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;usa-card__footer&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;usa-button&quot;&gt;Visit Florida Keys&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;tablet:grid-col-6 desktop:grid-col-4&quot;&gt;
+            &lt;div class=&quot;usa-card__container&quot;&gt;
+                &lt;div class=&quot;usa-card__header&quot;&gt;
+                    &lt;h4 class=&quot;usa-card__heading&quot;&gt;Exdent media&lt;/h4&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;usa-card__media usa-card__media--exdent&quot;&gt;
+                    &lt;div class=&quot;usa-card__img&quot;&gt;
+                        &lt;img
+                            src=&quot;https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg&quot;
+                            alt=&quot;A placeholder image&quot;
+                        /&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;usa-card__body&quot;&gt;
+                    &lt;p&gt;
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                        possimus similique nemo odit doloremque laudantium?
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;usa-card__footer&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;usa-button&quot;&gt;Visit Florida Keys&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
+              </div>
+            </div>
+            
+              
+              <section class="component-variation">
+                <h2>Card Flag</h2>
+
+                <!-- Preview -->
+                <div class="component-preview">
+                  <div class="grid-container">
+    <ul class="usa-card-group">
+        <li class="usa-card--flag flex-1">
+            <div class="usa-card__container">
+            <div class="usa-card__header">
+                <h4 class="usa-card__heading">Default flag</h4>
+            </div>
+            <div class="usa-card__media">
+                <div class="usa-card__img">
+                <img
+                    src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+                    alt="A placeholder image"
+                />
+                </div>
+            </div>
+            <div class="usa-card__body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="usa-card__footer">
+                <a href="#" class="usa-button">Visit Florida Keys</a>
+            </div>
+            </div>
+        </li>
+        <li class="usa-card--flag flex-1 usa-card--media-right">
+            <div class="usa-card__container">
+            <div class="usa-card__header">
+                <h4 class="usa-card__heading">Flag media right inset</h4>
+            </div>
+            <div class="usa-card__media usa-card__media--inset">
+                <div class="usa-card__img">
+                <img
+                    src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+                    alt="A placeholder image"
+                />
+                </div>
+            </div>
+            <div class="usa-card__body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="usa-card__footer">
+                <a href="#" class="usa-button">Visit Florida Keys</a>
+            </div>
+            </div>
+        </li>
+    </ul>
+</div>
+                </div>
+
+                <!-- Accordion Code -->
+                
+
+                <div class="usa-accordion code-example">
+                  <h4 class="usa-accordion__heading">
+                    <button
+                      type="button"
+                      class="usa-accordion__button"
+                      aria-expanded="false"
+                      aria-controls="card-card-flag"
+                    >
+                      View code
+                    </button>
+                  </h4>
+                  <div id="card-card-flag" class="usa-accordion__content usa-prose">
+                    <pre><code class="language-html">
+                      &lt;div class=&quot;grid-container&quot;&gt;
+    &lt;ul class=&quot;usa-card-group&quot;&gt;
+        &lt;li class=&quot;usa-card--flag flex-1&quot;&gt;
+            &lt;div class=&quot;usa-card__container&quot;&gt;
+            &lt;div class=&quot;usa-card__header&quot;&gt;
+                &lt;h4 class=&quot;usa-card__heading&quot;&gt;Default flag&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;usa-card__media&quot;&gt;
+                &lt;div class=&quot;usa-card__img&quot;&gt;
+                &lt;img
+                    src=&quot;https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg&quot;
+                    alt=&quot;A placeholder image&quot;
+                /&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;usa-card__body&quot;&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;usa-card__footer&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;usa-button&quot;&gt;Visit Florida Keys&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;usa-card--flag flex-1 usa-card--media-right&quot;&gt;
+            &lt;div class=&quot;usa-card__container&quot;&gt;
+            &lt;div class=&quot;usa-card__header&quot;&gt;
+                &lt;h4 class=&quot;usa-card__heading&quot;&gt;Flag media right inset&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;usa-card__media usa-card__media--inset&quot;&gt;
+                &lt;div class=&quot;usa-card__img&quot;&gt;
+                &lt;img
+                    src=&quot;https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg&quot;
+                    alt=&quot;A placeholder image&quot;
+                /&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;usa-card__body&quot;&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;usa-card__footer&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;usa-button&quot;&gt;Visit Florida Keys&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+                    </code></pre>
+                  </div>
+                </div>
+              </section>
+            
+          
+          
         </main>
       </div>
     </div>

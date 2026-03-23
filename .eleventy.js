@@ -1,8 +1,19 @@
 const markdownIt = require("markdown-it");
+const fs = require("fs");
+const path = require("path");
 
 module.exports = function(eleventyConfig) {
   // Copy CSS and assets to the output folder
   eleventyConfig.addPassthroughCopy({"src/assets/css": "assets/css"});
+
+    eleventyConfig.addFilter("rawFile", function (filePath) {
+    return fs.readFileSync(filePath, "utf-8");
+  });
+
+  eleventyConfig.addFilter("rawFile", function (filePath) {
+    const fullPath = path.join("src/_includes/", filePath);
+    return fs.readFileSync(fullPath, "utf-8");
+  });
 
   // Markdown filter for Liquid templates
   const md = markdownIt({

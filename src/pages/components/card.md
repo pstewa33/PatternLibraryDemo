@@ -3,16 +3,12 @@ layout: component.njk
 title: Card
 permalink: /components/card/
 tags: components
+component: components/uswds/card/card-default.html
+variations:
+  - name: Card Flag
+    file: "components/uswds/card/card-flag.html"
 ---
 
 {{ description }}
 
-## Component Preview
 
-### Default
-
-{% include "components/uswds/card/card-default.html" %}
-
-### Flag Layout
-
-{% include "components/uswds/card/card-flag.html" %}

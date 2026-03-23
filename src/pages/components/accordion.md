@@ -1,7 +1,7 @@
 ---
 layout: component.njk
 title: Accordion
-permalink: /components/accordion/
+permalink: library/components/accordion/
 tags: components
 component: components/uswds/accordion/accordion-borderless.html
 description: An accordion is a list of headers that hide or reveal additional content when selected.

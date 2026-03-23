@@ -1,7 +1,7 @@
 ---
 layout: component.njk
 title: Card
-permalink: /components/card/
+permalink: library/components/card/
 tags: components
 component: components/uswds/card/card-default.html
 variations:

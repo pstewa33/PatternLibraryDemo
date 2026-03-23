@@ -2,6 +2,7 @@
 layout: base.md
 title: Components Home
 permalink: /library/components/
+hideFromSidebar: true
 ---
 
 <div class="grid-container">

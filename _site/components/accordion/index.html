@@ -4,13 +4,57 @@
     <meta charset="UTF-8">
     <title>Accordion</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/css/uswds.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
-  <body class="usa-content">
-    <main class="usa-prose">
-      <h1>Accordion</h1>
-
-      <!-- Component content goes here -->
-      <div class="usa-accordion">
+  <body class="page-content">
+    <div class="navbar">
+      <div class="usa-logo" id="basic-logo">
+        <a href="/"><em class="usa-logo__text">USWDS Component Library</em></a>
+      </div>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="/library/components/">Component Library</a></li>
+        <li><a class="nav-link" href="/library/templates/">Templates</a></li>
+      </ul>
+    </div>
+    <div class="grid-container-widescreen">
+      <div class="grid-row grid-gap">
+        <aside class="tablet:grid-col-3">
+          <ul class="sidebar-nav">
+            
+              <li><a href="/components/button/">Buttons</a></li>
+            
+              <li><a href="/components/accordion/">Accordion</a></li>
+            
+              <li><a href="/components/alert/">Alert</a></li>
+            
+              <li><a href="/components/banner/">Banner</a></li>
+            
+              <li><a href="/components/breadcrumb/">Breadcrumb</a></li>
+            
+              <li><a href="/components/card/">Card</a></li>
+            
+              <li><a href="/components/footer/">Footer</a></li>
+            
+              <li><a href="/components/header/">Header</a></li>
+            
+              <li><a href="/components/identifier/">Identifier</a></li>
+            
+              <li><a href="/components/in-page-nav/">In-page Navigation</a></li>
+            
+              <li><a href="/components/search/">Search</a></li>
+            
+              <li><a href="/components/side-navigation/">Search</a></li>
+            
+              <li><a href="/library/components/">Components Home</a></li>
+            
+          </ul>
+        </aside>
+        <main class="tablet:grid-col-9">
+          <h1>Accordion</h1>
+          <!-- Component preview -->
+          
+            <div class="component-preview">
+              <div class="usa-accordion">
   <h4 class="usa-accordion__heading">
     <button
       type="button"
@@ -21,7 +65,7 @@
       First Amendment
     </button>
   </h4>
-  <div id="a1" class="usa-accordion__content usa-prose">
+  <div id="a1" class="usa-accordion__content">
     <p>
       Congress shall make no law respecting an establishment of religion, or
       prohibiting the free exercise thereof; or abridging the freedom of speech,
@@ -39,7 +83,7 @@
       Second Amendment
     </button>
   </h4>
-  <div id="a2" class="usa-accordion__content usa-prose">
+  <div id="a2" class="usa-accordion__content">
     <p>
       A well regulated Militia, being necessary to the security of a free State,
       the right of the people to keep and bear Arms, shall not be infringed.
@@ -59,7 +103,7 @@
       Third Amendment
     </button>
   </h4>
-  <div id="a3" class="usa-accordion__content usa-prose">
+  <div id="a3" class="usa-accordion__content">
     <p>
       No Soldier shall, in time of peace be quartered in any house, without the
       consent of the Owner, nor in time of war, but in a manner to be prescribed
@@ -76,7 +120,7 @@
       Fourth Amendment
     </button>
   </h4>
-  <div id="a4" class="usa-accordion__content usa-prose">
+  <div id="a4" class="usa-accordion__content">
     <p>
       The right of the people to be secure in their persons, houses, papers, and
       effects, against unreasonable searches and seizures, shall not be
@@ -95,7 +139,7 @@
       Fifth Amendment
     </button>
   </h4>
-  <div id="a5" class="usa-accordion__content usa-prose">
+  <div id="a5" class="usa-accordion__content">
     <p>
       No person shall be held to answer for a capital, or otherwise infamous
       crime, unless on a presentment or indictment of a Grand Jury, except in
@@ -109,7 +153,129 @@
     </p>
   </div>
 </div>
-    </main>
+            </div>
+            <!-- Component source code -->
+            
+            <div class="usa-accordion code-example">
+              <h4 class="usa-accordion__heading">
+                <button
+                  type="button"
+                  class="usa-accordion__button"
+                  aria-expanded="false"
+                  aria-controls="code-accordion"
+                >
+                  View code
+                </button>
+              </h4>
+              <div id="code-accordion" class="usa-accordion__content usa-prose">
+                <pre><code class="language-html">
+                  &lt;div class=&quot;usa-accordion&quot;&gt;
+  &lt;h4 class=&quot;usa-accordion__heading&quot;&gt;
+    &lt;button
+      type=&quot;button&quot;
+      class=&quot;usa-accordion__button&quot;
+      aria-expanded=&quot;true&quot;
+      aria-controls=&quot;a1&quot;
+    &gt;
+      First Amendment
+    &lt;/button&gt;
+  &lt;/h4&gt;
+  &lt;div id=&quot;a1&quot; class=&quot;usa-accordion__content&quot;&gt;
+    &lt;p&gt;
+      Congress shall make no law respecting an establishment of religion, or
+      prohibiting the free exercise thereof; or abridging the freedom of speech,
+      or of the press; or the right of the people peaceably to assemble, and to
+      petition the Government for a redress of grievances.
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;h4 class=&quot;usa-accordion__heading&quot;&gt;
+    &lt;button
+      type=&quot;button&quot;
+      class=&quot;usa-accordion__button&quot;
+      aria-expanded=&quot;false&quot;
+      aria-controls=&quot;a2&quot;
+    &gt;
+      Second Amendment
+    &lt;/button&gt;
+  &lt;/h4&gt;
+  &lt;div id=&quot;a2&quot; class=&quot;usa-accordion__content&quot;&gt;
+    &lt;p&gt;
+      A well regulated Militia, being necessary to the security of a free State,
+      the right of the people to keep and bear Arms, shall not be infringed.
+    &lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;This is a list item&lt;/li&gt;
+      &lt;li&gt;Another list item&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;h4 class=&quot;usa-accordion__heading&quot;&gt;
+    &lt;button
+      type=&quot;button&quot;
+      class=&quot;usa-accordion__button&quot;
+      aria-expanded=&quot;false&quot;
+      aria-controls=&quot;a3&quot;
+    &gt;
+      Third Amendment
+    &lt;/button&gt;
+  &lt;/h4&gt;
+  &lt;div id=&quot;a3&quot; class=&quot;usa-accordion__content&quot;&gt;
+    &lt;p&gt;
+      No Soldier shall, in time of peace be quartered in any house, without the
+      consent of the Owner, nor in time of war, but in a manner to be prescribed
+      by law.
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;h4 class=&quot;usa-accordion__heading&quot;&gt;
+    &lt;button
+      type=&quot;button&quot;
+      class=&quot;usa-accordion__button&quot;
+      aria-expanded=&quot;false&quot;
+      aria-controls=&quot;a4&quot;
+    &gt;
+      Fourth Amendment
+    &lt;/button&gt;
+  &lt;/h4&gt;
+  &lt;div id=&quot;a4&quot; class=&quot;usa-accordion__content&quot;&gt;
+    &lt;p&gt;
+      The right of the people to be secure in their persons, houses, papers, and
+      effects, against unreasonable searches and seizures, shall not be
+      violated, and no Warrants shall issue, but upon probable cause, supported
+      by Oath or affirmation, and particularly describing the place to be
+      searched, and the persons or things to be seized.
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;h4 class=&quot;usa-accordion__heading&quot;&gt;
+    &lt;button
+      type=&quot;button&quot;
+      class=&quot;usa-accordion__button&quot;
+      aria-expanded=&quot;false&quot;
+      aria-controls=&quot;a5&quot;
+    &gt;
+      Fifth Amendment
+    &lt;/button&gt;
+  &lt;/h4&gt;
+  &lt;div id=&quot;a5&quot; class=&quot;usa-accordion__content&quot;&gt;
+    &lt;p&gt;
+      No person shall be held to answer for a capital, or otherwise infamous
+      crime, unless on a presentment or indictment of a Grand Jury, except in
+      cases arising in the land or naval forces, or in the Militia, when in
+      actual service in time of War or public danger; nor shall any person be
+      subject for the same offence to be twice put in jeopardy of life or limb;
+      nor shall be compelled in any criminal case to be a witness against
+      himself, nor be deprived of life, liberty, or property, without due
+      process of law; nor shall private property be taken for public use,
+      without just compensation.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
+              </div>
+            </div>
+            
+          
+        </main>
+      </div>
+    </div>
 
     <!-- USWDS JS -->
     <script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/js/uswds.min.js"></script>

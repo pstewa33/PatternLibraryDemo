@@ -1,5 +1,6 @@
 ---
 layout: component.njk
-title: ALert
+title: Alert
 permalink: /components/alert/
+tags: components
 ---

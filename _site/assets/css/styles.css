@@ -33799,6 +33799,10 @@ h1 {
   font-size: 0.9rem;
   overflow-x: auto;
 }
+.code-example button {
+  background-color: #003366;
+  color: #f8f9fa;
+}
 
 .sidebar-nav {
   position: sticky;

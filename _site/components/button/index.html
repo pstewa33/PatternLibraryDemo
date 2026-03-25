@@ -4,70 +4,151 @@
     <meta charset="UTF-8">
     <title>Buttons</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/css/uswds.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
-  <body class="usa-content">
-    <main class="usa-prose">
-      <h1>Buttons</h1>
-
-      <!-- Component content goes here -->
-      <h1>Buttons</h1>
-<p>A button draws attention to important actions with a large selectable surface.</p>
-<h2>Component Preview</h2>
-<div class="grid-row grid-gap">
-  <div class="tablet:grid-col-4 margin-bottom-2">
-    <p><strong>Primary button</strong></p>
-    <button class="usa-button" >
-      Primary button
-    </button>
-  </div>
-  <div class="tablet:grid-col-4 margin-bottom-2">
-    <p><strong>Secondary button</strong></p>
-    <button class="usa-button usa-button--secondary" >
-      Secondary button
-    </button>
-  </div>
-  <div class="tablet:grid-col-4 margin-bottom-2">
-    <p><strong>Accent Cool</strong></p>
-    <button class="usa-button usa-button--accent-cool" >
-      Accent Cool
-    </button>
-  </div>
-  <div class="tablet:grid-col-4 margin-bottom-2">
-    <p><strong>Accent Warm</strong></p>
-    <button class="usa-button usa-button--accent-warm" >
-      Accent Warm
-    </button>
-  </div>
-  <div class="tablet:grid-col-4 margin-bottom-2">
-    <p><strong>Outline</strong></p>
-    <button class="usa-button usa-button--outline" >
-      Outline
-    </button>
-  </div>
-  <div class="tablet:grid-col-4 margin-bottom-2">
-    <p><strong>Big button</strong></p>
-    <button class="usa-button usa-button--big" >
-      Big button
-    </button>
-  </div>
-  <div class="tablet:grid-col-4 margin-bottom-2">
-    <p><strong>Disabled button</strong></p>
-    <button class="usa-button" disabled>
-      Disabled button
-    </button>
-  </div>
-</div>
-    </main>
+  <body class="page-content">
+    <div class="navbar">
+      <div class="usa-logo" id="basic-logo">
+        <a href="/"><em class="usa-logo__text">USWDS Component Library</em></a>
+      </div>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="/library/components/">Component Library</a></li>
+        <li><a class="nav-link" href="/library/templates/">Templates</a></li>
+      </ul>
+    </div>
+    <div class="grid-container-widescreen">
+      <div class="grid-row grid-gap">
+        <aside class="tablet:grid-col-3">
+          <ul class="sidebar-nav">
+            
+              
+                <li><a href="/components/button/">Buttons</a></li>
+              
+            
+              
+                <li><a href="/library/components/accordion/">Accordion</a></li>
+              
+            
+              
+                <li><a href="/components/alert/">Alert</a></li>
+              
+            
+              
+                <li><a href="/components/banner/">Banner</a></li>
+              
+            
+              
+                <li><a href="/components/breadcrumb/">Breadcrumb</a></li>
+              
+            
+              
+                <li><a href="/library/components/card/">Card</a></li>
+              
+            
+              
+                <li><a href="/components/footer/">Footer</a></li>
+              
+            
+              
+                <li><a href="/components/header/">Header</a></li>
+              
+            
+              
+                <li><a href="/components/identifier/">Identifier</a></li>
+              
+            
+              
+                <li><a href="/components/in-page-nav/">In-page Navigation</a></li>
+              
+            
+              
+                <li><a href="/components/search/">Search</a></li>
+              
+            
+              
+                <li><a href="/components/side-navigation/">Side Navigation</a></li>
+              
+            
+              
+            
+          </ul>
+        </aside>
+        <main class="tablet:grid-col-9">
+          <h1>Buttons</h1>
+          <!-- Component preview -->
+          
+            <div class="component-preview">
+              <h3>Primary Button</h3>
+<button class="usa-button" type="button">Default</button>
+<h3>Secondary Button</h3>
+<button class="usa-button usa-button--secondary" type="button">Default</button>
+<h3>Outline Button</h3>
+<button class="usa-button usa-button--outline" type="button">Default</button>
+<h3>Disabled Button</h3>
+<button class="usa-button" type="button" disabled>Default</button>
+<h3>Big Button</h3>
+<button class="usa-button usa-button--big" type="button">Default</button>
+<h3>Accent Cool</h3>
+<button class="usa-button usa-button--accent-cool" type="button">Default</button>
+<h3>Accent Warm</h3>
+<button class="usa-button usa-button--accent-warm" type="button">Default</button>
+            </div>
+            <!-- Component source code -->
+            
+            <div class="usa-accordion code-example">
+              <h4 class="usa-accordion__heading">
+                <button
+                  type="button"
+                  class="usa-accordion__button"
+                  aria-expanded="false"
+                  aria-controls="code-buttons"
+                >
+                  View code
+                </button>
+              </h4>
+              <div id="code-buttons" class="usa-accordion__content usa-prose">
+                <pre><code class="language-html">
+                  &lt;h3&gt;Primary Button&lt;/h3&gt;
+&lt;button class=&quot;usa-button&quot; type=&quot;button&quot;&gt;Default&lt;/button&gt;
+&lt;h3&gt;Secondary Button&lt;/h3&gt;
+&lt;button class=&quot;usa-button usa-button--secondary&quot; type=&quot;button&quot;&gt;Default&lt;/button&gt;
+&lt;h3&gt;Outline Button&lt;/h3&gt;
+&lt;button class=&quot;usa-button usa-button--outline&quot; type=&quot;button&quot;&gt;Default&lt;/button&gt;
+&lt;h3&gt;Disabled Button&lt;/h3&gt;
+&lt;button class=&quot;usa-button&quot; type=&quot;button&quot; disabled&gt;Default&lt;/button&gt;
+&lt;h3&gt;Big Button&lt;/h3&gt;
+&lt;button class=&quot;usa-button usa-button--big&quot; type=&quot;button&quot;&gt;Default&lt;/button&gt;
+&lt;h3&gt;Accent Cool&lt;/h3&gt;
+&lt;button class=&quot;usa-button usa-button--accent-cool&quot; type=&quot;button&quot;&gt;Default&lt;/button&gt;
+&lt;h3&gt;Accent Warm&lt;/h3&gt;
+&lt;button class=&quot;usa-button usa-button--accent-warm&quot; type=&quot;button&quot;&gt;Default&lt;/button&gt;
+                </code></pre>
+              </div>
+            </div>
+            
+          
+        </main>
+      </div>
+    </div>
 
     <!-- USWDS JS -->
     <script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/js/uswds.min.js"></script>
     <script>
-      // Wait until the DOM is ready, then initialize all USWDS components
-      document.addEventListener("DOMContentLoaded", function() {
-        if (window.Uswds) {
-          Uswds.initAll();
+    document.addEventListener("DOMContentLoaded", function() {
+      const links = document.querySelectorAll(".nav-link, .sidebar-nav a");
+      const path = window.location.pathname;
+
+      links.forEach(link => {
+        // Normalize trailing slash
+        let href = link.getAttribute("href");
+        if (!href.endsWith("/")) href += "/";
+
+        if (path.startsWith(href)) {
+          link.classList.add("active");
+          link.setAttribute("aria-current", "page");
         }
       });
+    });
     </script>
   </body>
 </html>

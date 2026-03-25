@@ -1,6 +1,6 @@
 ---
 layout: component.njk
-title: Search
+title: Side Navigation
 permalink: /components/side-navigation/
 tags: components
 ---

@@ -51,17 +51,27 @@ h1 {
   color: #111;
 }
 
-.navbar {
+.library-navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.5rem;
-}
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    a{
+      text-decoration: none;
+      color: #003366;
+    }
+    a.active{
+      font-weight: bold;
+      color: #005ea2; /* USWDS link highlight */
+      background-color: #e5e7eb;
+      padding: 0.5rem 1rem;
+    }
+  }
 }
 
 .sidebar-nav {
@@ -140,7 +150,6 @@ h1 {
   }
 }
 
-.nav-link.active,
 .sidebar-nav a.active {
   font-weight: bold;
   color: #005ea2; /* USWDS link highlight */

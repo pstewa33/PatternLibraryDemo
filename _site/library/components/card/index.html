@@ -75,7 +75,9 @@
         </aside>
         <main class="tablet:grid-col-9">
           <h1>Card</h1>
+          <p>Cards contain content and actions about a single subject.</p>
           <!-- Component preview -->
+          <h2> Component Preview </h2>
           
             <div class="component-preview">
               <div class="grid-container">
@@ -463,6 +465,158 @@
             
           
           
+          <div class="guidance">
+            <h2>Guidance</h2>
+            <h3>About the card component</h3>
+<p>A card is often a subset or summary of a larger idea. It acts as an entry point to more detailed information. This summary can contain a variety of content types, such as text, images and multimedia, or buttons and links.</p>
+<p>An individual card is typically a member of a collection of similar cards, not a single card in isolation. A card is distinguished from others in its collection by its content, and cards are distinguished from the broader page context in form — usually with a border or a shadow.</p>
+<p>Finally, a card is modular, which means you can vary the order of cards in a collection without destroying any individual card’s meaning.</p>
+<h3>When to use the card component</h3>
+<ul>
+<li><strong>Tabular data.</strong> Don’t use a card as a substitute for a table row.</li>
+<li><strong>Simple calls to action.</strong> Use a button instead.</li>
+<li><strong>Standalone content.</strong> Consider an <a href="/components/side-navigation/">aside</a> or another standalone element.</li>
+<li><strong>Sequential, continuous text.</strong> Cards should be self-contained and modular. If the reader is meant to read from card to card, consider a list or simple body text and headings.</li>
+</ul>
+<h3>Usability guidance</h3>
+<ul>
+<li>Make cards actionable. Since cards are used as a summary of more detailed information, any individual card should link out to that information.</li>
+<li>Don’t use the card component only for decoration. Use the card component for cards, not for any type of content that’s designed to have a border around it.</li>
+<li>Include non-redundant content. Don’t repeat images or content common to all or most cards in a collection. Repeated information (like using the same image for each card in a collection) makes it more difficult to distinguish cards from one another.</li>
+<li>Make sure images are properly sized. Cards often change size depending on the device. - Make sure you use an image that works well on any device at any size.</li>
+<li>Use simple styling. Avoid distracting skeumorphism. Don’t include any card styling that calls too much attention to the metaphor of a paper card, like folds, bent edges, or paper texture.</li>
+</ul>
+<h3>Accessibility Guidance</h3>
+<ul>
+<li>Use unordered lists and list items. Use a ul for a card group and an li for each card. - This formatting allows screen readers to enumerate the items in the card group and allows shortcuts between list items.</li>
+<li>Use the appropriate heading level for your page. Update heading level based on the content of your page to make sure card headings are in the correct, logical outline order.</li>
+<li>Use CSS to order the media element. Logically, the media element should follow the header element. Don’t re-organize the markup to reverse their order.</li>
+</ul>
+
+          </div>
+          <div class="settings-table">
+            <h3>Card Settings</h3>
+            <table class="usa-table usa-table--borderless">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td><code>$theme-card-border-color</code></td>
+                  <td>Stroke color of card.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>$theme-card-border-radius</code></td>
+                  <td>Border radius of card.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>$theme-card-border-width</code></td>
+                  <td>Stroke thickness of card.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>$theme-card-gap</code></td>
+                  <td>Gap between cards in a card group.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>$theme-card-flag-min-width</code></td>
+                  <td>Width at which flag cards change to horizontal layout.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>$theme-card-flag-image-width</code></td>
+                  <td>Fixed image width in the card flag variant.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>$theme-card-font-family</code></td>
+                  <td>Font family for card body.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>$theme-card-header-typeset</code></td>
+                  <td>Family, size, and line height of the heading.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>$theme-card-margin-bottom</code></td>
+                  <td>Bottom margin for card.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>$theme-card-padding-perimeter</code></td>
+                  <td>Padding between card elements and card border.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>$theme-card-padding-y</code></td>
+                  <td>Vertical padding between card elements.</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+          <div class="variant-settings-table">
+            <h3>Card Variants</h3>
+            <table class="usa-table usa-table--borderless">
+              <thead>
+                <tr>
+                  <th scope="col">Variant</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td><code>.usa-card--flag</code></td>
+                  <td>Display in a horizontal (“flag”) orientation at a specified width ($theme-card-flag-min-width).</td>
+                </tr>
+                
+                <tr>
+                  <td><code>.usa-card--header-first</code></td>
+                  <td>Displays the header element before the media element.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>.usa-card--media-right</code></td>
+                  <td>In combination with usa-card--flag, sets the media element on the right. (Flag cards display media on the left by default.)</td>
+                </tr>
+                
+                <tr>
+                  <td><code>.usa-card__media--inset</code></td>
+                  <td>Indents the media element so it doesn’t extend to the edge of the card.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>.usa-card__body--exdent</code></td>
+                  <td>Extends the body element out over the card border. Useful for light-bordered cards.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>.usa-card__footer--exdent</code></td>
+                  <td>Extends the footer element out over the card border. Useful for light-bordered cards.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>.usa-card__header--exdent</code></td>
+                  <td>Extends the header element out over the card border. Useful for light-bordered cards.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>.usa-card__media--exdent</code></td>
+                  <td>Extends the media element out over the card border. Useful for light-bordered cards.</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
         </main>
       </div>
     </div>

@@ -29,7 +29,9 @@
         </aside>
         <main class="tablet:grid-col-9">
           <h1>{{ title }}</h1>
+          <p>{{ description }}</p>
           <!-- Component preview -->
+          <h2> Component Preview </h2>
           {% if component %}
             <div class="component-preview">
               {% include component %}
@@ -89,6 +91,48 @@
           {% else %}
             <p style="color:red;">No component path provided</p>
           {% endif %}
+          <div class="guidance">
+            <h2>Guidance</h2>
+            {{ content | safe }}
+          </div>
+          <div class="settings-table">
+            <h3>{{ title }} Settings</h3>
+            <table class="usa-table usa-table--borderless">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for setting in settings %}
+                <tr>
+                  <td><code>{{ setting.name }}</code></td>
+                  <td>{{ setting.description }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          <div class="variant-settings-table">
+            <h3>{{title}} Variants</h3>
+            <table class="usa-table usa-table--borderless">
+              <thead>
+                <tr>
+                  <th scope="col">Variant</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for variant in variants %}
+                <tr>
+                  <td><code>{{ variant.name }}</code></td>
+                  <td>{{ variant.description }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
         </main>
       </div>
     </div>

@@ -75,7 +75,9 @@
         </aside>
         <main class="tablet:grid-col-9">
           <h1>Accordion</h1>
+          <p>An accordion is a list of headers that hide or reveal additional content when selected.</p>
           <!-- Component preview -->
+          <h2> Component Preview </h2>
           
             <div class="component-preview">
               <div class="usa-accordion">
@@ -751,6 +753,90 @@
             
           
           
+          <div class="guidance">
+            <h2>Guidance</h2>
+            <h3>When to use the accordion component</h3>
+<ul>
+<li>If users will only need a few specific pieces of content within a page.</li>
+<li>If you have only a small space to display a lot of content.</li>
+</ul>
+<h3>When to consider something else</h3>
+<p><strong>If users need to see most or all of the information on a page.</strong> Use well-formatted text instead.</p>
+<p><strong>If there is not enough content to warrant condensing.</strong> Accordions increase cognitive load and interaction cost because users have to make decisions about what headers to click on.</p>
+<h3>Usability Guidance</h3>
+<ul>
+<li>Make the entire header selectable. Allow users to click anywhere in the header area to expand or collapse the content; a larger target is easier to manipulate.</li>
+<li>Give interactive elements enough space. Make sure interactive elements within the collapsible region are far enough from the headers that users don’t accidentally trigger a collapse. (The exact distance depends on the device.)</li>
+</ul>
+<h3>Accessibility Guidance</h3>
+<ul>
+<li>Code header areas in the accordion as buttons. Using a <button type="button"> assures accordions are usable with both screen readers and keyboards.</li>
+<li>Use meaningful expansion button labels. Aim for informative labels like “Explore federal compliance checklists” rather than vague ones like “Click here.”</li>
+<li>Use aria-controls to associate an accordion button with its related content. Connect an accordion button control with its appropriate content region by referencing the controlled element’s id in the button’s aria-controls attribute.</li>
+<li>Use unique ids. Each button has a unique name, aria-controls=&quot;[id]&quot;, that associates the control with the appropriate region by referencing the controlled element’s id.</li>
+<li>Accordions use javascript to set the hidden values of their content areas. Each content area will have its hidden attribute set by the component, depending on its corresponding button’s aria-expanded attribute. To ensure your content is accessible in the event that the JavaScript does not load or is disabled, you should not manually set hidden on any of your content areas.</li>
+<li>You do not need to add text alternatives for the collapsed and expanded accordion states. These states are set programmatically with JavaScript.</li>
+</ul>
+
+          </div>
+          <div class="settings-table">
+            <h3>Accordion Settings</h3>
+            <table class="usa-table usa-table--borderless">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td><code>$theme-accordion-background-color</code></td>
+                  <td>Background color of the accordion content.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>$theme-accordion-border-width</code></td>
+                  <td>Border width of the bordered accordion.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>$theme-accordion-border-color</code></td>
+                  <td>Border color of the bordered accordion.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>$theme-accordion-button-background-color</code></td>
+                  <td>Background color of the accordion button.</td>
+                </tr>
+                
+                <tr>
+                  <td><code>$theme-accordion-font-family</code></td>
+                  <td>Font family of the accordion.</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+          <div class="variant-settings-table">
+            <h3>Accordion Variants</h3>
+            <table class="usa-table usa-table--borderless">
+              <thead>
+                <tr>
+                  <th scope="col">Variant</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td><code>.usa-accordion--bordered</code></td>
+                  <td>Display a border around accordion content.</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
         </main>
       </div>
     </div>

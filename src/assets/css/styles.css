@@ -33733,17 +33733,26 @@ h1 {
   color: #111;
 }
 
-.navbar {
+.library-navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.5rem;
 }
-
-.nav-links {
+.library-navbar .nav-links {
   list-style: none;
   display: flex;
   gap: 1rem;
+}
+.library-navbar .nav-links a {
+  text-decoration: none;
+  color: #003366;
+}
+.library-navbar .nav-links a.active {
+  font-weight: bold;
+  color: #005ea2; /* USWDS link highlight */
+  background-color: #e5e7eb;
+  padding: 0.5rem 1rem;
 }
 
 .sidebar-nav {
@@ -33819,7 +33828,6 @@ h1 {
   border-radius: 4px;
 }
 
-.nav-link.active,
 .sidebar-nav a.active {
   font-weight: bold;
   color: #005ea2; /* USWDS link highlight */

@@ -3,6 +3,7 @@ layout: base.njk
 title: Components Home
 permalink: /library/components/
 hideFromSidebar: true
+excludeFromComponents: true
 ---
 
 <div class="grid-container-widescreen">

@@ -2,6 +2,7 @@
 layout: base.njk
 title: Templates Home
 permalink: /library/templates/
+excludeFromTemplates: true
 ---
 
 <div class="grid-container-widescreen">

@@ -34,6 +34,7 @@ module.exports = function(eleventyConfig) {
   // --- Templates collection ---
   eleventyConfig.addCollection("templates", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/pages/templates/*.md")
+      .filter(item => !item.data.excludeFromTemplates)
       .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
   });
 

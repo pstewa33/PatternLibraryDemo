@@ -1,5 +1,5 @@
 ---
-layout: base.md
+layout: base.njk
 title: Home
 ---
 

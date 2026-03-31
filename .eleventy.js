@@ -26,9 +26,17 @@ module.exports = function(eleventyConfig) {
     return md.render(value || "");
   });
 
-    // Case study collections
+    // Components collections
   eleventyConfig.addCollection("components", function (collectionApi) {
   return collectionApi.getFilteredByGlob("src/pages/components/*.md")
+    .sort((a, b) => {
+      return (a.data.order || 0) - (b.data.order || 0);
+    });
+  });
+
+  // Templates collections
+  eleventyConfig.addCollection("templates", function (collectionApi) {
+  return collectionApi.getFilteredByGlob("src/pages/templates/*.md")
     .sort((a, b) => {
       return (a.data.order || 0) - (b.data.order || 0);
     });

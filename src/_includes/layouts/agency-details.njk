@@ -1,0 +1,29 @@
+---
+layout: base-proto
+
+agency:
+  title: Department of Transportation
+  logo: //images.ctfassets.net/c5zrbffrgyn3/BqOp03Pw0T1ZZ7yO9EO4D/  2994e0dd772ccd82bf0df616ff97371f/DOT-280px.png
+---
+
+<div class="header">
+    <h1>{{agency.title}}</h1>
+</div>
+<div class="highlight-image">
+    <img class="agency-icon" src="{{agency.logo}}"/>
+    <div class="caption-container">
+        <span class="caption"><small>{{page.caption}}</small></span>
+    </div>
+</div>
+<div clsss="highlight-content">
+    {{ content | safe}}
+</div>
+<div class="highlight-agency">
+    <h3 id="highlight__agency">Related Resources</h3>
+    <ul>
+      <li><a href="">Highlighted USDA Activities</a></li>
+      <li><a href="">USDA Climate Hubs</a></li>
+      <li><a href="">Forest Service (USDA-FS) - Climate Change</a></li>
+      <li><a href="">Economic Research Service (ERS) - Climate Change</a></li>
+    </ul>
+</div>

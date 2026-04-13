@@ -1,0 +1,39 @@
+---
+collectionsLandingPage:
+- sys:
+    id: 5DnlR9cqjtAm6Hwis8SDx8
+    created_at: !ruby/object:DateTime 2023-03-02 16:45:21.586000000 Z
+    updated_at: !ruby/object:DateTime 2023-03-02 16:45:21.586000000 Z
+    content_type_id: collectionsLandingPage
+    revision: 1
+  page_title: Highlights
+  summary: |-
+    Since 1989, the U.S. Global Change Research Program (USGCRP) has submitted annual reports to Congress called Our Changing Planet. The reports describe the status of USGCRP research activities, provide progress updates, and document recent accomplishments.
+
+    In particular, Our Changing Planet highlights progress and accomplishments in interagency activities. These highlights represent the broad spectrum of USGCRP activities that extend from Earth system observations, modeling, and fundamental research through synthesis and assessment, decision support, education, and public engagement. Highlights describe the state of science at the time of publication of each yearly report, and may not reflect more recent advances in understanding. The date of publication of the source report is noted on each highlight page.
+- sys:
+    id: 4PSaLIH1ttHoyho04x5wGV
+    created_at: !ruby/object:DateTime 2023-02-20 20:55:20.925000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-23 19:30:05.551000000 Z
+    content_type_id: collectionsLandingPage
+    revision: 2
+  page_title: Reports & Assessments
+  summary: 'The Reports Library features scientific assessments, annual reports, strategic
+    research plans, and other resources produced by USGCRP and the collaborative efforts
+    of our member agencies. Select reports by other authoritative scientific bodies
+    with whom we work, such as the Intergovernmental Panel on Climate Change (IPCC)
+    and the National Research Council (NRC), are also accessible here. Most reports
+    are available for download (open and click View); some can be ordered in print
+    free of charge (open and click Add to Cart). '
+  body:
+    nodeType: document
+    data: {}
+    content:
+    - nodeType: paragraph
+      data: {}
+      content:
+      - nodeType: text
+        value: Links to major reports followed by descriptions
+        marks: []
+        data: {}
+---

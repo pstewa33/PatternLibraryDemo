@@ -1,0 +1,22 @@
+---
+basicPage:
+- sys:
+    id: OaqJ0Q7c1KGzAaRKoAggx
+    created_at: !ruby/object:DateTime 2023-02-20 20:52:47.434000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-24 20:53:39.907000000 Z
+    content_type_id: basicPage
+    revision: 2
+  page_title: About USGCRP
+  summary: High-level description of the USGCRP and its mission.
+  body_markdown: |-
+  
+    The U.S. Global Change Research Program (USGCRP) is a federal program mandated by Congress to coordinate federal research and investments in understanding the forces shaping the global environment, both human and natural, and their impacts on society. USGCRP facilitates collaboration and cooperation across its 14 federal member agencies to advance understanding of the changing Earth system and maximize efficiencies in federal global change research.
+
+    Together, USGCRP and its member agencies provide a gateway to authoritative science, tools, and resources to help people and organizations across the country manage risks and respond to changing environmental conditions.
+
+    USGCRP Vision, Mission, and Strategic Planning
+
+    USGCRP's 2022–2031 Strategic Plan sets the course for federal global change research for the next decade. It was informed by input and review from federal agencies, the National Academies of Sciences, Engineering, and Medicine, and the public, and lays the foundation for meeting new and growing challenges, as well as demands for useful, accessible, and inclusive data and information. The Plan is organized around four pillars: Advancing Science; Engaging the Nation; Informing Decisions; and Collaborating Internationally.
+
+    Under this Plan, USGCRP will continue to build and refine understanding of global change in ways that respond to emerging needs and provide critical information for the benefit of all.
+---

@@ -1,17 +1,28 @@
 ---
-layout: agency-details.njk
-title: Agency Details
-permalink: prototype/agency-details/
-tags: protoype
+agencyDetails:
+- sys:
+    id: 1rKdR4Pix45XtxXcbrWxMR
+    created_at: !ruby/object:DateTime 2023-02-23 19:28:23.062000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-23 19:28:23.062000000 Z
+    content_type_id: agencyDetails
+    revision: 1
+  agency_title: Department of Transportation
+  agency_logo: //images.ctfassets.net/c5zrbffrgyn3/BqOp03Pw0T1ZZ7yO9EO4D/2994e0dd772ccd82bf0df616ff97371f/DOT-280px.png
+  body_content: >
+    The Department of Transportation (DOT) coordinates with USGCRP and
+    its participating agencies to inform transportation system mitigation and
+    resilience solutions. DOT initiatives to improve the resilience and sustainability
+    of the U.S. transportation sector include the following:
 
-caption:
----
-
-The Department of Transportation (DOT) coordinates with USGCRP and its participating agencies to inform transportation system mitigation and resilience solutions. DOT initiatives to improve the resilience and sustainability of the U.S. transportation sector include the following:
-
-The Federal Aviation Administration (FAA) is working on many fronts to address concerns related to climate change. The FAA is working through their university partners to understand the impacts of aviation activity on climate change and are following a holistic plan to reduce those impacts with other federal agencies through new technologies, sustainable aviation fuels, and improved operational procedure concepts. 
-
-The FAA is also working to evaluate and mitigate the risks of sea level rise and other impacts of climate change on FAA infrastructure and the ability to safely operate the National Airspace System. FAA is leading an effort to develop an implementation plan for a national airport strategy to provide a top-down framework for investments in airport infrastructure, including resilience.
+    - The Federal Aviation Administration (FAA) is working on many fronts to address concerns related to 
+    climate change. The FAA is working through their university partners to understand the impacts of aviation 
+    activity on climate change and are following a holistic plan to reduce those impacts with other federal 
+    agencies through new technologies, sustainable aviation fuels, and improved operational procedure concepts. 
+    The FAA is also working to evaluate and mitigate the risks of sea level rise and other impacts of climate 
+    change on FAA infrastructure and the ability to safely operate the National Airspace System. FAA is leading 
+    an effort to develop an implementation plan for a national airport strategy to provide a top-down framework f
+    or investments in airport infrastructure, including resilience.<br>
+    <br>
     - The Federal Highway Administration (FHWA) and the Federal Transit Administration (FTA) are working with 
     States, public transportation agencies, and metropolitan areas to improve the condition and increase the 
     resilience of the Nation's Highways and public transportation systems, respectively, and to reduce greenhouse 
@@ -20,7 +31,8 @@ The FAA is also working to evaluate and mitigate the risks of sea level rise and
     resilience in asset management plans; addressing resilience in project development and design; optimizing 
     operations and maintenance practices; and deploying alternative fuel vehicle infrastructure. FTA and FHWA 
     are also working to ensure that resilience is considered when rebuilding damaged transportation infrastructure 
-    after a natural disaster.
+    after a natural disaster.<br>
+    <br>
     - The Maritime Administration (MARAD) Ports Team is developing a framework for an asset management tool called 
     the “Waterfront Asset Management Tool” (WFAM) to inform port planning and decision making. This asset 
     management tool can be used by public and privately owned ports to identify infrastructure vulnerabilities, 
@@ -59,3 +71,5 @@ The FAA is also working to evaluate and mitigate the risks of sea level rise and
     climate change experts from each of DOT’s Operating Administrations, as well as external stakeholders 
     including other federal agencies and the international community, to coordinate research, policies, and 
     actions to reduce greenhouse gas emissions and make our transportation systemsmore resilient.<br>
+  slug: department-of-transportation
+---

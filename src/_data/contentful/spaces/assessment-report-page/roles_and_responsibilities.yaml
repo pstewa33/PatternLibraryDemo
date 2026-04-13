@@ -1,0 +1,55 @@
+---
+rolesAndResponsibilitiesList:
+- sys:
+    id: 6MI9xzYPERhTDGMUmmQd9Z
+    created_at: !ruby/object:DateTime 2023-03-02 16:57:10.465000000 Z
+    updated_at: !ruby/object:DateTime 2023-03-02 16:57:10.465000000 Z
+    content_type_id: rolesAndResponsibilitiesList
+    revision: 1
+  section_label: NCA5 Participant Roles and Responsibilities
+  roles:
+  - sys:
+    role: Federal Steering Committee
+    content: A Federal Steering Committee is responsible for the development, production, and content of the 
+      report as well as high-level scoping to ensure coherence, relevance, and responsiveness to the Global 
+      Change Research Act and the USGCRP Strategic Plan. The Federal Steering Committee (with concurrence 
+      from the SGCR) selects Federal Coordinating Lead Authors, Chapter Leads, and Review Editors based on 
+      a number of criteria, including scientific expertise and experience with scientific assessments.
+  - sys:
+    role: Federal Coordinating Lead Authors and Agency Chapter Leads
+    content: Federal Coordinating Lead Authors and Agency Chapter Leads work across chapters to ensure 
+      consistency throughout the report and adherence to development guidance. Coordinating Lead Authors 
+      are also the points of contact to the Chapter Leads.
+  - sys:
+    role: Chapter Leads
+    content: Chapter Leads are federal or non-federal experts selected from a pool generated in part by a public 
+      nominations process. In consultation with Federal Coordinating Lead Authors, Chapter Leads organize, 
+      direct, and lead authorship of individual chapters. Chapter Author teams are established by the Chapter 
+      Leads with suggestions from the Federal Coordinating Lead Authors and the Federal Steering Committee. 
+      Chapters are submitted to the corresponding Federal Coordinating Lead Author, and ultimately transmitted 
+      to the Federal Steering Committee as the individual input of the Chapter Leads.
+  - sys:
+    role: Chapter Authors
+    content: Chapter Authors are selected by the Chapter Leads in consultation with the Federal Coordinating 
+      Lead Author and Federal Steering Committee, based in part on nominations via the public call. They are 
+      responsible for developing chapter content. Chapter author teams work with Chapter Leads to develop 
+      draft chapters and edit those materials in response to comments received during the multiple rounds of 
+      review.
+  - sys:
+    role: Technical Contributors
+    content: Technical Contributors provide limited, requested inputs into chapter development. They are selected 
+      on an as-needed basis, for specific needs identified by the author team. Technical Contributors may be 
+      selected from the pool of publicly nominated authors.
+  - sys:
+    role: Review Editors
+    content: Review Editors are selected by the Federal Steering Committee from a pool of experts, including 
+      those generated through a public nomination process. Their role is to ensure that authors respond 
+      adequately, and provide sufficient justification for their responses to all comments received during 
+      the public and National Academies review periods.
+  - sys:
+    role: The National Academies of Sciences, Engineering, and Medicine (NASEM)
+    content: The National Academies of Sciences, Engineering, and Medicine (NASEM) provides an expert, external 
+      panel to review the public draft of NCA5. In addition, NASEM maintains a standing committee to provide 
+      advice to USGCRP. That committee is updated regularly with publicly available information regarding the 
+      status and plans for NCA5.
+---

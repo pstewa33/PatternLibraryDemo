@@ -1,0 +1,40 @@
+---
+resourceDetailsPage:
+- sys:
+    id: 7KmMxsLgLVlK4UThINFTwl
+    created_at: !ruby/object:DateTime 2023-03-01 19:46:05.460000000 Z
+    updated_at: !ruby/object:DateTime 2023-03-01 19:46:05.460000000 Z
+    content_type_id: resourceDetailsPage
+    revision: 1
+  page_title: Second State of the Carbon Cycle Report
+  date: !ruby/object:DateTime 2023-02-27
+  summary: 'What was the fate and impact of carbon in atmospheric, aquatic and terrestrial
+    systems across North America over the last decade? How is it projected to grow
+    and impact future climate change, given current scenarios and how can we harness
+    current scientific and socio-economic advances in our knowledge of the carbon
+    cycle at the intersection of human dimensions to better manage it in order to
+    reduce future climate change risks? The just released Second State of the Carbon
+    Cycle Report (#SOCCR2, USGCRP 2018) tells you all about it. SOCCR2 is a Sustained
+    Assessment series special product of the U.S. Global Change Research Program,
+    spanning 4 sections, 19 chapters and 7 appendices across 878 pages, developed
+    by a 200+ member international team who produced over 6 formal drafts reviewed
+    over 6 times, including by the U.S. National Academy of Sciences and the general
+    public before final review and released by the 13 agencies of the USGCRP the same
+    day as the 4th National Climate Assessment. To kick-off this special One NOAA
+    SOCCR2 Seminar Series ‘From Science to Solutions: The State of the Carbon Cycle
+    Assessment’, this talk will provide an overview of the multiyear, multi-step,
+    interagency assessment formulation and development process. A snapshot of the
+    many scientifically significant and societally relevant key findings, as a preview
+    of the upcoming SOCCR2 OneNOAA Seminar talks the following Tuesdays (12-1 pm ET,
+    Feb 26-May 28) will also be provided. This talk will also focus on potential carbon
+    management strategies along with trade-offs and co-benefits of certain actions,
+    to showcase the carbon cycle science-derived climate change actions and solutions
+    that decades of the interdisciplinary research has rendered possible. '
+- sys:
+    id: 5GNRcCXf21Tqaa8YcTGTFG
+    created_at: !ruby/object:DateTime 2023-02-23 19:13:30.919000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-23 19:13:30.919000000 Z
+    content_type_id: resourceDetailsPage
+    revision: 1
+  page_title: 'Climate.gov Climate Change: Annual Greenhouse Gas Index'
+---

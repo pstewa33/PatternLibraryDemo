@@ -1,0 +1,13 @@
+---
+assessmentReportTimeline:
+- sys:
+    id: 5YFy1mjgUPrHHlfbDrZSKv
+    created_at: !ruby/object:DateTime 2023-03-01 20:28:51.486000000 Z
+    updated_at: !ruby/object:DateTime 2023-03-01 20:28:51.486000000 Z
+    content_type_id: assessmentReportTimeline
+    revision: 1
+  date: !ruby/object:DateTime 2020-02-01 00:00:00.000000000 Z
+  content: 'February 2020 - Fall 2023
+
+    '
+---

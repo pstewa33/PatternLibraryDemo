@@ -3,8 +3,39 @@
   <head>
     <meta charset="UTF-8">
     <title>Prototype Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/css/uswds.min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
   <body>
+    <div class="library-navbar">
+    <div class="usa-logo" id="basic-logo">
+    <a href="/"><em class="usa-logo__text">USWDS Component Library</em></a>
+    </div>
+    <ul class="nav-links">
+    <li><a class="nav-link" href="/library/components/">Component Library</a></li>
+    <li><a class="nav-link" href="/library/templates/">Templates</a></li>
+    </ul>
+</div>
+    
+
+    <!-- USWDS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/js/uswds.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const links = document.querySelectorAll(".nav-link, .sidebar-nav a");
+      const path = window.location.pathname;
+
+      links.forEach(link => {
+        // Normalize trailing slash
+        let href = link.getAttribute("href");
+        if (!href.endsWith("/")) href += "/";
+
+        if (path.startsWith(href)) {
+          link.classList.add("active");
+          link.setAttribute("aria-current", "page");
+        }
+      });
+    });
+    </script>
   </body>
 </html>

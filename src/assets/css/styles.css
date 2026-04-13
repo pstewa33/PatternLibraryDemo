@@ -33774,32 +33774,9 @@ h1 {
 }
 
 /* Make grid columns stretch */
-.grid-row {
-  align-items: stretch;
-}
-
 /* Make card fill full height */
-.usa-card {
-  height: 100%;
-  display: flex;
-}
-
 /* Make inner container flexible */
-.usa-card__container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
 /* Push footer to bottom */
-.usa-card__footer {
-  margin-top: auto;
-}
-
-.grid-row.grid-gap > div {
-  margin-bottom: 2rem; /* space between rows */
-}
-
 .code-example {
   background-color: #f5f7fa;
   padding: 1rem;

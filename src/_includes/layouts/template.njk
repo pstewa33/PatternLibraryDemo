@@ -12,31 +12,59 @@
     {% include "partials/library/nav.html" %}
 
     <!-- Page container -->
-    <div class="grid-container">
-      <main class="grid-row">
-        <div class="grid-col-12">
-          <h1>{{ title }}</h1>
-          {% if description %}
-            <p>{{ description }}</p>
-          {% endif %}
+    <div class="grid-container-widescreen">
+      <div class="grid-row grid-gap">
+        <aside class="tablet:grid-col-3">
+            <ul class="sidebar-nav">
+              {% for template in collections.templates %}
+                {% if not template.data.hideFromSidebar %}
+                  <li><a href="{{ template.url }}">{{ template.data.title }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </aside>
+          <main class="tablet:grid-col-9">
+            <div class="grid-col-12">
+              <h1>{{ title }}</h1>
+              {% if description %}
+                <p>{{ description }}</p>
+              {% endif %}
 
-          <!-- Template preview -->
-          {% if templatePreview %}
-            <section class="template-preview">
-              {% include templatePreview %}
-            </section>
-          {% endif %}
+              <!-- Template preview -->
+              {% if templatePreview %}
+                <section class="template-preview">
+                  {% include templatePreview %}
+                </section>
+              {% endif %}
 
-          <!-- Optional guidance / notes -->
-          {% if content %}
-            <section class="guidance">
-              {{ content | safe }}
-            </section>
-          {% endif %}
+              <!-- Optional guidance / notes -->
+              {% if content %}
+                <section class="guidance">
+                  {{ content | safe }}
+                </section>
+              {% endif %}
+            </div>
+          </main>
         </div>
-      </main>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/js/uswds.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/js/uswds.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const links = document.querySelectorAll(".nav-link, .sidebar-nav a");
+      const path = window.location.pathname;
+
+      links.forEach(link => {
+        // Normalize trailing slash
+        let href = link.getAttribute("href");
+        if (!href.endsWith("/")) href += "/";
+
+        if (path.startsWith(href)) {
+          link.classList.add("active");
+          link.setAttribute("aria-current", "page");
+        }
+      });
+    });
+    </script>
   </body>
 </html>

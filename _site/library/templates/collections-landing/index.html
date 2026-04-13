@@ -20,21 +20,201 @@
 </div>
 
     <!-- Page container -->
-    <div class="grid-container">
-      <main class="grid-row">
-        <div class="grid-col-12">
-          <h1>Collections Landing</h1>
-          
+    <div class="grid-container-widescreen">
+      <div class="grid-row grid-gap">
+        <aside class="tablet:grid-col-3">
+            <ul class="sidebar-nav">
+              
+                
+                  <li><a href="/library/templates/agency-details/">Agency Details</a></li>
+                
+              
+                
+                  <li><a href="/library/templates/assessment-page/">Assessment Page</a></li>
+                
+              
+                
+                  <li><a href="/library/templates/basic-page/">Basic Page</a></li>
+                
+              
+                
+                  <li><a href="/library/templates/card-landing/">Card Landing</a></li>
+                
+              
+                
+                  <li><a href="/library/templates/collections-landing/">Collections Landing</a></li>
+                
+              
+                
+                  <li><a href="/library/templates/form-page/">Form Page</a></li>
+                
+              
+                
+                  <li><a href="/library/templates/highlight-details/">Highlight Details</a></li>
+                
+              
+                
+                  <li><a href="/library/templates/home-page/">Home Page</a></li>
+                
+              
+                
+                  <li><a href="/library/templates/indicator-page/">Indicator Page</a></li>
+                
+              
+                
+                  <li><a href="/library/templates/resource/">Resource</a></li>
+                
+              
+            </ul>
+          </aside>
+          <main class="tablet:grid-col-9">
+            <div class="grid-col-12">
+              <h1>Collections Landing</h1>
+              
+                <p>The Collections Landing template is used for landing pages that utilize the collections component to display a list of content.</p>
+              
 
-          <!-- Template preview -->
-          
+              <!-- Template preview -->
+              
 
-          <!-- Optional guidance / notes -->
-          
+              <!-- Optional guidance / notes -->
+              
+                <section class="guidance">
+                  <h3>Collection Component</h3>
+<table class="usa-table">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Type</td>
+            <td>Authored?</td>
+            <td>Content</td>
+            <td>Searchable?</td>
+            <td>Source</td>
+            <td>Notes</td>
+        </tr>
+    </thead>
+    <tbody>
+<p><tr>
+<td>Optional Image</td>
+<td>image</td>
+<td>yes</td>
+<td>ratio 1:1</td>
+<td>yes</td>
+<td></td>
+<td></td>
+</tr></p>
+<p><tr>
+<td>Collection Heading</td>
+<td>h4</td>
+<td>yes</td>
+<td>80 characters max</td>
+<td>yes</td>
+<td></td>
+<td></td>
+</tr></p>
+<p><tr>
+<td>Collection Body</td>
+<td>text</td>
+<td>yes</td>
+<td></td>
+<td>yes</td>
+<td></td>
+<td></td>
+</tr></p>
+<p><tr>
+<td>Collection Link</td>
+<td>href</td>
+<td></td>
+<td>Continue Reading</td>
+<td>yes</td>
+<td></td>
+<td></td>
+</tr></p>
+<p></tbody></p>
+</table>
+<h3>Filter Component</h3>
+<table class="usa-table">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Type</td>
+            <td>Authored?</td>
+            <td>Content</td>
+            <td>Searchable?</td>
+            <td>Source</td>
+            <td>Notes</td>
+        </tr>
+    </thead>
+    <tbody>
+<p><tr>
+<td>Accordion Label</td>
+<td>button</td>
+<td>yes</td>
+<td></td>
+<td>yes</td>
+<td></td>
+<td></td>
+</tr></p>
+<p><tr>
+<td>Accordion Content</td>
+<td></td>
+<td>yes</td>
+<td></td>
+<td>yes</td>
+<td></td>
+<td></td>
+</tr></p>
+<p></tbody></p>
+</table>
+<h2>Functionality Specifications</h2>
+<p>This section shows the details on how to build the page based on the author selections.</p>
+<h3>Page Header</h3>
+<p>The page header includes the page title (h1) and summary text.</p>
+<ul>
+<li>The summary has max-character count of 140</li>
+</ul>
+<h2>Filters</h2>
+<p>The filters are represented by an accordion component. Each section of the accordion contains a label and corresponding filters.</p>
+<ul>
+<li>Accordion button label is an h4</li>
+<li>Filters</li>
+</ul>
+<h2>Collection Section</h2>
+<p>The collection section includes a list of collection components that each represent a search result. Each component includes an optional image, basic information on the search result item, and a link to the item's corresponding page.</p>
+<ul>
+<li>Each collection component includes some combination of an optional image, a heading, a date, body copy, a url linking to typically a details page, and tags</li>
+<li>The image ratio is 1:1</li>
+<li>The heading is an h4</li>
+<li>Date format: Month DD, YYYY</li>
+<li>The body is made up of rich text</li>
+</ul>
+<h2>Pagination</h2>
+<p>A bound pagination is used to navigate the search results</p>
+
+                </section>
+              
+            </div>
+          </main>
         </div>
-      </main>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/js/uswds.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/js/uswds.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const links = document.querySelectorAll(".nav-link, .sidebar-nav a");
+      const path = window.location.pathname;
+
+      links.forEach(link => {
+        // Normalize trailing slash
+        let href = link.getAttribute("href");
+        if (!href.endsWith("/")) href += "/";
+
+        if (path.startsWith(href)) {
+          link.classList.add("active");
+          link.setAttribute("aria-current", "page");
+        }
+      });
+    });
+    </script>
   </body>
 </html>

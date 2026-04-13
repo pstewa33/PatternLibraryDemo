@@ -20,21 +20,98 @@
 </div>
 
     <!-- Page container -->
-    <div class="grid-container">
-      <main class="grid-row">
-        <div class="grid-col-12">
-          <h1>Basic Page</h1>
-          
+    <div class="grid-container-widescreen">
+      <div class="grid-row grid-gap">
+        <aside class="tablet:grid-col-3">
+            <ul class="sidebar-nav">
+              
+                
+                  <li><a href="/library/templates/agency-details/">Agency Details</a></li>
+                
+              
+                
+                  <li><a href="/library/templates/assessment-page/">Assessment Page</a></li>
+                
+              
+                
+                  <li><a href="/library/templates/basic-page/">Basic Page</a></li>
+                
+              
+                
+                  <li><a href="/library/templates/card-landing/">Card Landing</a></li>
+                
+              
+                
+                  <li><a href="/library/templates/collections-landing/">Collections Landing</a></li>
+                
+              
+                
+                  <li><a href="/library/templates/form-page/">Form Page</a></li>
+                
+              
+                
+                  <li><a href="/library/templates/highlight-details/">Highlight Details</a></li>
+                
+              
+                
+                  <li><a href="/library/templates/home-page/">Home Page</a></li>
+                
+              
+                
+                  <li><a href="/library/templates/indicator-page/">Indicator Page</a></li>
+                
+              
+                
+                  <li><a href="/library/templates/resource/">Resource</a></li>
+                
+              
+            </ul>
+          </aside>
+          <main class="tablet:grid-col-9">
+            <div class="grid-col-12">
+              <h1>Basic Page</h1>
+              
+                <p>The basic page template is used for information or documentation. It is often the finial destination page in a user&#39;s journey.
+</p>
+              
 
-          <!-- Template preview -->
-          
+              <!-- Template preview -->
+              
 
-          <!-- Optional guidance / notes -->
-          
+              <!-- Optional guidance / notes -->
+              
+                <section class="guidance">
+                  <h2>Functionality Specifications</h2>
+<p>This section show the details on how to build the page based on the author selections.</p>
+<h3>Page Header</h3>
+<p>The page header includes the Title and Summary</p>
+<h3>Page Body</h3>
+<p>The page body contains the body Copy with a max width of 80ex.</p>
+
+                </section>
+              
+            </div>
+          </main>
         </div>
-      </main>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/js/uswds.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/js/uswds.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const links = document.querySelectorAll(".nav-link, .sidebar-nav a");
+      const path = window.location.pathname;
+
+      links.forEach(link => {
+        // Normalize trailing slash
+        let href = link.getAttribute("href");
+        if (!href.endsWith("/")) href += "/";
+
+        if (path.startsWith(href)) {
+          link.classList.add("active");
+          link.setAttribute("aria-current", "page");
+        }
+      });
+    });
+    </script>
   </body>
 </html>

@@ -45,7 +45,7 @@ specs2:
 ---
 
 ### Related list item
-{% include "partials/library/content-specs.html" content=page.specs2 %} 
+{% include "partials/library/content-specs.njk", content: specs2 %}
 
 ## Functionality Specifications
 This section show the details on how to build the page based on the author selections.

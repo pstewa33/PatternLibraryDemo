@@ -33811,4 +33811,15 @@ h1 {
   background-color: #e5e7eb;
 }
 
+.agency-icon {
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.caption-container {
+  margin-top: 0.5rem;
+}
+
 /*# sourceMappingURL=styles.css.map */

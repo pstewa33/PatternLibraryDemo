@@ -139,3 +139,20 @@ h1 {
   color: #005ea2; /* USWDS link highlight */
   background-color: #e5e7eb;
 }
+
+// Prototype specific styles
+
+.highlight-image {
+ // background-color: #e5e7eb;
+}
+
+.agency-icon {
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.caption-container {
+  margin-top: 0.5rem;
+}

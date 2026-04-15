@@ -30,6 +30,10 @@
                 <p>{{ description }}</p>
               {% endif %}
 
+              {% if link %}
+                <a href="{{ link }}" class="usa-button" target="_blank" rel="noopener">View prototype</a>
+              {% endif %}
+
               <!-- Template preview -->
               {% if templatePreview %}
                 <section class="template-preview">

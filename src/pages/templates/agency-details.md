@@ -3,9 +3,8 @@ layout: template.njk
 title: Agency Details
 permalink: library/templates/agency-details/
 tags: templates
-prototype:
-  - name: Agency Details Page Template
-    link: /prototype/agency-details
+prototype-name: Agency Details Page Template
+link: /prototype/agency-details
 overview: The Agency Details Page template is a subpage used to provide additional information on a topic.
 description: The Agency Details Page template is used for providing additional information on a topic or item.
 specs:

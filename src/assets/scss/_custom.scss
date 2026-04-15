@@ -156,3 +156,19 @@ h1 {
 .caption-container {
   margin-top: 0.5rem;
 }
+
+//Global Change Header
+
+.header-gc{
+  background: linear-gradient(180deg, #053B59 0%, #07527D 50%);
+
+  .usa-logo__text a{
+    color: white;
+  }
+  .usa-nav__primary-item a, span{
+    color: white;
+  }
+  .usa-nav__primary button[aria-expanded=false] span::after{
+    background-color: white;
+  }
+}

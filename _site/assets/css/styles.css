@@ -33822,4 +33822,17 @@ h1 {
   margin-top: 0.5rem;
 }
 
+.header-gc {
+  background: linear-gradient(180deg, #053B59 0%, #07527D 50%);
+}
+.header-gc .usa-logo__text a {
+  color: white;
+}
+.header-gc .usa-nav__primary-item a, .header-gc span {
+  color: white;
+}
+.header-gc .usa-nav__primary button[aria-expanded=false] span::after {
+  background-color: white;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -9,6 +9,9 @@ module.exports = function(eleventyConfig) {
   // --- Passthrough for Images ---
   eleventyConfig.addPassthroughCopy({"src/assets/images": "assets/images"});
 
+  // --- Passthrough for USWDS Imgs ---
+    eleventyConfig.addPassthroughCopy({"src/assets/img": "assets/img"});
+
   // --- Raw file filter ---
   eleventyConfig.addFilter("rawFile", function(filePath) {
     const fullPath = path.join("src/_includes/", filePath);

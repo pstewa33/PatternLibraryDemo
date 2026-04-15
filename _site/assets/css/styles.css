@@ -33835,4 +33835,19 @@ h1 {
   background-color: white;
 }
 
+.footer-gc {
+  background: #053B59;
+}
+.footer-gc a {
+  color: white;
+}
+.footer-gc .usa-footer__primary-section {
+  background: #053B59;
+  color: white;
+}
+.footer-gc .usa-footer__secondary-section {
+  background: #053B59;
+  color: white;
+}
+
 /*# sourceMappingURL=styles.css.map */

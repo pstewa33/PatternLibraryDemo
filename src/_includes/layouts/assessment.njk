@@ -1,0 +1,52 @@
+---
+layout: base-proto.njk
+---
+<div class="usa-alert usa-alert--info">
+    <div class="usa-alert__body">
+        <p class="usa-alert__text">
+            Development of the Fifth National Climate Assessment (NCA5) is currently underway, with anticipated delivery in 2023. This content will be updated as new information becomes available.
+        </p>
+    </div>
+</div>
+
+<div class="grid-container">
+    <h1>{{ title }}</h1>
+    <div class="text">
+        <div class="usa-alert usa-alert--info">
+            <div class="usa-alert__body">
+                <p class="usa-alert__text">
+                <a href="">Fourth National Climate Assessment</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="tabs basic-tabs">
+        <ul role="tablist" class="tabs__tab-list">
+            <li role="presentation"><a href="#Overview" role="tab" aria-controls="overview" class="tabs__trigger basic-tab-trigger">Overview</a></li>
+            <li role="presentation"><a href="#Mandate" role="tab" aria-controls="Mandate" class="tabs__trigger basic-tab-trigger">Mandate</a></li>
+            <li role="presentation"><a href="#Chapters" role="tab" aria-controls="Chapters" class="tabs__trigger basic-tab-trigger">Chapters</a></li>
+            <li role="presentation"><a href="#Roles" role="tab" aria-controls="Roles" class="tabs__trigger basic-tab-trigger">Roles</a></li>
+            <li role="presentation"><a href="#Regions" role="tab" aria-controls="Regions" class="tabs__trigger basic-tab-trigger">Regions</a></li>
+            <li role="presentation"><a href="#Engagement" role="tab" aria-controls="Engagement" class="tabs__trigger basic-tab-trigger">Engagement</a></li>
+            <li role="presentation"><a href="#Workshops" role="tab" aria-controls="Workshops" class="tabs__trigger basic-tab-trigger">Workshops</a></li>
+            <li role="presentation"><a href="#FAQs" role="tab" aria-controls="FAQs" class="tabs__trigger basic-tab-trigger">FAQs</a></li>
+            <li role="presentation"><a href="#Timeline" role="tab" aria-controls="Timeline" class="tabs__trigger basic-tab-trigger">Timeline</a></li>
+        </ul>
+        <section id="overview" role="tabpanel" class="tabs__panel basic-tab-panel">
+            {% if cards %}
+              <h4>Upcoming</h4>
+              {% include "components/prototype/cards/event.html" %}
+              <a href="/">View all events <i class="fa-solid fa-arrow-right-long"></i></a>
+            {% endif %}
+            <h3>About NCA5</h3>
+            <p>
+                {{ assessmentReport.id }}
+            </p>
+
+    </div>
+</div>
+
+<h2>Upcoming Events</h2>
+{% include "components/prototype/cards/event.html" %}
+
+<a href="/">View all events <i class="fa-solid fa-arrow-right-long"></i></a>

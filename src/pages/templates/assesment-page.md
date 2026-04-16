@@ -3,9 +3,8 @@ layout: template.njk
 title: Assessment Page
 permalink: library/templates/assessment-page/
 tags: templates
-prototype: 
-  - name: Assessment Page
-    link: "/pages/prototype/assessment/"
+prototype-name: Assessment Page
+link: "/prototype/assessment/"
 overview: The Assessments Page template is used to build pages that contain various subpages stored in tabs.
 description: The Assessments Page template is used to build pages that contain various subpages stored in tabs.
 

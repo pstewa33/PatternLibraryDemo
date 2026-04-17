@@ -1,0 +1,75 @@
+---
+agencyDetails:
+- sys:
+    id: 1rKdR4Pix45XtxXcbrWxMR
+    created_at: !ruby/object:DateTime 2023-02-23 19:28:23.062000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-23 19:28:23.062000000 Z
+    content_type_id: agencyDetails
+    revision: 1
+  agency_title: Department of Transportation
+  agency_logo: //images.ctfassets.net/c5zrbffrgyn3/BqOp03Pw0T1ZZ7yO9EO4D/2994e0dd772ccd82bf0df616ff97371f/DOT-280px.png
+  body_content: >
+    The Department of Transportation (DOT) coordinates with USGCRP and
+    its participating agencies to inform transportation system mitigation and
+    resilience solutions. DOT initiatives to improve the resilience and sustainability
+    of the U.S. transportation sector include the following:
+
+    - The Federal Aviation Administration (FAA) is working on many fronts to address concerns related to 
+    climate change. The FAA is working through their university partners to understand the impacts of aviation 
+    activity on climate change and are following a holistic plan to reduce those impacts with other federal 
+    agencies through new technologies, sustainable aviation fuels, and improved operational procedure concepts. 
+    The FAA is also working to evaluate and mitigate the risks of sea level rise and other impacts of climate 
+    change on FAA infrastructure and the ability to safely operate the National Airspace System. FAA is leading 
+    an effort to develop an implementation plan for a national airport strategy to provide a top-down framework f
+    or investments in airport infrastructure, including resilience.<br>
+    <br>
+    - The Federal Highway Administration (FHWA) and the Federal Transit Administration (FTA) are working with 
+    States, public transportation agencies, and metropolitan areas to improve the condition and increase the 
+    resilience of the Nation's Highways and public transportation systems, respectively, and to reduce greenhouse 
+    gas emissions. FHWA and FTA are supporting transportation agencies through ongoing programs that include: 
+    assessing vulnerabilities; considering resilience in the transportation planning process; incorporating 
+    resilience in asset management plans; addressing resilience in project development and design; optimizing 
+    operations and maintenance practices; and deploying alternative fuel vehicle infrastructure. FTA and FHWA 
+    are also working to ensure that resilience is considered when rebuilding damaged transportation infrastructure 
+    after a natural disaster.<br>
+    <br>
+    - The Maritime Administration (MARAD) Ports Team is developing a framework for an asset management tool called 
+    the “Waterfront Asset Management Tool” (WFAM) to inform port planning and decision making. This asset 
+    management tool can be used by public and privately owned ports to identify infrastructure vulnerabilities, 
+    establish risk-based asset management plans and prioritize infrastructure expenditures to improve resiliency 
+    and mitigate risks that threaten operational stability. The MARAD Ports Team is also working with the 
+    University of Arkansas’ Maritime Transportation Research and Education Center (MarTREC) to develop a 
+    geospatial “data hub” data repository that will provide a template for mechanisms and processes to compile, 
+    standardize, synchronize and integrate disparate data sources related to maritime transportation and 
+    demonstrate large-scale data storage and visualization tools that can be used to improve resiliency, 
+    planning, investment and operational decisions.<br>
+    <br>
+    - The Pipeline and Hazardous Materials Safety Administration (PHMSA) Offices of Pipeline Safety (OPS) and 
+    Hazardous Materials (OHMS) are conducting research projects that address safety, environmental sustainability, 
+    and climate change. OPS is conducting research to promote safer systems for underground gas storage and 
+    liquefied natural gas facilities, as well as research related to the use and transport of hydrogen and 
+    hydrogen/natural gas blended fuels by pipeline. In addition, OPS is hoping to reduce methane emissions by 
+    sponsoring advanced research in methane detection and leak control. OHMS also focuses on hazardous materials 
+    packaging, particularly ways to reduce risks related to the transport of lithium batteries, and new packaging 
+    needed to address hazards associated with emerging energy technologies.<br>
+    <br>
+    - The Office of International Transportation and Trade engages bilaterally and multilaterally to foster a 
+    zero-emission global transformation that addresses climate mitigation, adaptation, and resilience through 
+    standards, policies, strategies, research, trade promotion, and technical cooperation and assistance.<br>
+    <br>
+    - The Office of the Assistant Secretary for Research and Technology is working in partnership with FHWA and 
+    DOT’s Office of Intelligence, Security, and Emergency Response to ensure that the costs and benefits of 
+    resilience are incorporated into the transportation infrastructure planning process. The goal is to develop 
+    nationally replicable modelling tools capable of estimating the regional-scale impacts of natural and man-made 
+    disasters on the transportation system. These tools will enhance pre-event planning and disaster recovery 
+    capabilities.<br>
+    <br>
+    - DOT is committed to meeting the Biden-Harris Administration’s climate change goals, including the national 
+    target of net-zero greenhouse gas emissions by 2050. To that end, DOT has re-instituted and expanded the DOT 
+    Climate Change Center (CCC) to build on existing efforts to ensure intermodal coordination and collaboration 
+    on climate change activities across the Department. The CCC regularly convenes senior career staff and 
+    climate change experts from each of DOT’s Operating Administrations, as well as external stakeholders 
+    including other federal agencies and the international community, to coordinate research, policies, and 
+    actions to reduce greenhouse gas emissions and make our transportation systemsmore resilient.<br>
+  slug: department-of-transportation
+---

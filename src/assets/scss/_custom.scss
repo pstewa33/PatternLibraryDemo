@@ -139,3 +139,120 @@ h1 {
   color: #005ea2; /* USWDS link highlight */
   background-color: #e5e7eb;
 }
+
+// Prototype specific styles
+
+.agency-icon {
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.caption-container {
+  margin-top: 0.5rem;
+}
+
+//Global Change Header
+
+.header-gc{
+  background: linear-gradient(180deg, #053B59 0%, #07527D 50%);
+
+  .usa-logo__text a{
+    color: white;
+  }
+  .usa-nav__primary-item a, span{
+    color: white;
+  }
+  .usa-nav__primary button[aria-expanded=false] span::after{
+    background-color: white;
+  }
+}
+
+// Global Change Footer
+
+.footer-gc{
+  background: #053B59;
+
+  a{
+    color: white;
+  }
+
+  .usa-footer__primary-section{
+    background: #053B59;
+    color: white;
+  }
+  .usa-footer__secondary-section{
+    background: #053B59;
+    color: white;
+  }
+}
+
+// Assessment specific styles
+
+.workshop__collection{
+  padding-bottom: 20px;
+}
+
+.legend ul{
+  border: solid 1px #ddd;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.upcoming_events{
+  margin-bottom: 2rem;
+}
+
+//Tab Styles
+
+.basic-tabs {
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+
+  li{
+    padding: 1rem;
+  }
+  
+  a{
+    text-decoration: none;
+    color:#003366;
+  }
+}
+
+.tabs__tab-list {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  border-bottom: 1px solid #ddd;
+
+  li.is-active{
+    background-color: #005ea2;
+    border-radius: 4px 4px 0 0;
+
+    a{
+      color: white;
+    }
+  }
+
+}
+
+.tabs__trigger {
+  background: none;
+  border: none;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  border-bottom: 3px solid transparent;
+}
+
+.tabs__trigger[aria-selected="true"] {
+  border-bottom: 3px solid #005ea2; /* USWDS blue */
+  color: #005ea2;
+}
+
+.tabs__panel {
+  padding: 1rem 0;
+}

@@ -1,0 +1,16 @@
+---
+assessmentReportWorkshops:
+- sys:
+    id: 7IpdK5qSHp75sIRafeIl54
+    created_at: !ruby/object:DateTime 2023-03-01 20:25:30.642000000 Z
+    updated_at: !ruby/object:DateTime 2023-03-01 20:25:30.642000000 Z
+    content_type_id: assessmentReportWorkshops
+    revision: 1
+  workshop_title: Human Social Systems
+  workshop_date: !ruby/object:DateTime 2022-01-11 00:00:00.000000000 -05:00
+  summary: "Please join the authors of the Fifth National Climate Assessment for a
+    virtual \nworkshop to share your thoughts on the climate change-related issues
+    most \nimportant to include in the Human Social Systems chapter"
+  registration_link: N/A
+  agenda_pdf_attachment: https://downloads.globalchange.gov/nca5-resources/nca5_engagement_agendas/Human%20Social%20Systems%20PEW%20Agenda_Reformatted.docx.pdf
+---

@@ -1,0 +1,51 @@
+{
+  "id": "Fifth National Climate Assessment",
+  "year": "2022-02-01",
+  "about": "Development of the Fifth National Climate Assessment (NCA5) is currently underway, with anticipated delivery in 2023. This content will be updated as new information becomes available.",
+  "mandate": "The U.S. Global Change Research Program (USGCRP) was established by Presidential initiative in 1989 and mandated by Congress in the Global Change Research Act (GCRA) of 1990. Its mandate is to develop and coordinate a comprehensive and integrated United States research program to understand, assess, predict, and respond to global change.\n\nUSGCRP comprises 13 federal agencies that conduct or use research on global change and its impacts on society. It operates under the Subcommittee on Global Change Research of the National Science and Technology Council.\n\nIts responsibilities include coordinating research, producing mandated reports, informing decisions, and supporting international collaboration.\n\nThe GCRA also mandates a quadrennial National Climate Assessment (NCA), which:\n- Integrates and interprets scientific findings\n- Analyzes impacts across sectors like agriculture, energy, transportation, and health\n- Projects trends over the next 25–100 years",
+  "engagementSummary": "USGCRP recognizes that a robust public engagement strategy is vital. The NCA5 process is designed to be transparent and inclusive, with opportunities for public participation.",
+  "opportunities": [
+    {
+      "title": "Technical Inputs"
+    }
+  ],
+  "workshops": [
+    {
+      "title": "Human Social Systems",
+      "date": "2022-01-11",
+      "month": "JAN",
+      "day": 11,
+      "summary": "Virtual workshop to gather input on climate-related issues for the Human Social Systems chapter.",
+      "registrationLink": null,
+      "agendaUrl": "https://downloads.globalchange.gov/nca5-resources/nca5_engagement_agendas/Human%20Social%20Systems%20PEW%20Agenda_Reformatted.docx.pdf"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the U.S. Global Change Research Program?",
+      "answer": "USGCRP coordinates a comprehensive federal research program on global change and its impacts, as mandated by the Global Change Research Act of 1990."
+    },
+    {
+      "question": "What is the National Climate Assessment?",
+      "answer": "A congressionally mandated report that evaluates climate science, impacts, and future projections across sectors."
+    },
+    {
+      "question": "How many NCAs are there?",
+      "answer": "Four have been released so far (2000, 2009, 2014, and 2018)."
+    },
+    {
+      "question": "Will NCA5 include policy recommendations?",
+      "answer": "No. It is a scientific assessment and does not evaluate or recommend policy."
+    },
+    {
+      "question": "When will NCA5 be released?",
+      "answer": "Expected in late 2023."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2020-02-01",
+      "label": "February 2020 – Fall 2023"
+    }
+  ]
+}

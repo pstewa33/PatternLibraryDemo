@@ -1,0 +1,274 @@
+---
+layout: base-proto.njk
+---
+<div class="usa-alert usa-alert--info">
+    <div class="usa-alert__body">
+        <p class="usa-alert__text">
+            Development of the Fifth National Climate Assessment (NCA5) is currently underway, with anticipated delivery in 2023. This content will be updated as new information becomes available.
+        </p>
+    </div>
+</div>
+
+<div class="grid-container">
+    <h1>{{ title }}</h1>
+    <div class="text">
+        <div class="usa-alert usa-alert--info">
+            <div class="usa-alert__body">
+                <p class="usa-alert__text">
+                <a href="">Fourth National Climate Assessment</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="tabs basic-tabs">
+        <ul role="tablist" class="tabs__tab-list">
+            <li role="presentation">
+                <a href="#panel-overview" role="tab" aria-controls="panel-overview" aria-selected="true">Overview</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#panel-mandate" role="tab" aria-controls="panel-mandate" aria-selected="false">Mandate</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#panel-chapters" role="tab" aria-controls="panel-chapters" aria-selected="false">Chapters</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#panel-roles" role="tab" aria-controls="panel-roles" aria-selected="false">Roles</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#panel-regions" role="tab" aria-controls="panel-regions" aria-selected="false">Regions</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#panel-engagement" role="tab" aria-controls="panel-engagement" aria-selected="false">Engagement</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#panel-workshops" role="tab" aria-controls="panel-workshops" aria-selected="false">Workshops</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#panel-faqs" role="tab" aria-controls="panel-faqs" aria-selected="false">FAQs</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#panel-timeline" role="tab" aria-controls="panel-timeline" aria-selected="false">Timeline</a>
+            </li>
+        </ul>
+
+        <section id="panel-overview" role="tabpanel" aria-labelledby="tab-overview">
+            {% if cards %}
+              <h4>Upcoming</h4>
+              {% include "components/prototype/cards/event.md" %}
+              <a href="/">View all events <i class="fa-solid fa-arrow-right-long"></i></a>
+            {% endif %}
+            <h3>About NCA5</h3>
+            <p>
+                {{ assessmentReport.id }}
+            </p>
+            <h4>Previous Assessments</h4>
+            <ul>
+              <a href=""><li>link one</li></a>
+              <a href=""><li>link two</li></a>
+              <a href=""><li>link three</li></a>
+            </ul>
+            <h4>Sustained Resources</h4>
+            <ul>
+              <a href=""><li>link one</li></a>
+              <a href=""><li>link two</li></a>
+              <a href=""><li>link three</li></a>
+            </ul>
+        </section>
+
+        <section id="panel-mandate" role="tabpanel" aria-labelledby="tab-mandate" hidden>
+            <h3>Mandate</h3>
+            <p>
+              {{ assessmentReport.mandate }}
+            </p>
+        </section>
+
+        <section id="panel-chapters" role="tabpanel" aria-labelledby="tab-chapters" hidden>
+          <h3>{{ chaptersList.section_label }}</h3>
+          {% include "components/prototype/accordion/accordion-chapters.md" %}
+        </section>
+
+        <section id="panel-roles" role="tabpanel" aria-labelledby="tab-roles" hidden>
+            <h3>{{ rolesAndResponsibilitiesList.section_label }}</h3>
+            {% include "components/prototype/accordion/accordion-roles.md" %}
+        </section>
+
+        <section id="panel-regions" role="tabpanel" aria-labelledby="tab-regions" hidden>
+            <h3>Regions</h3>
+            <p>
+              NCA5 will assess current and future risks posed by climate change to each of NCA’s 10 regions, illustrated below.
+            </p>
+            <img alt="NCA5 Regions Map" class="regions-img" 
+            src="https://www.globalchange.gov/sites/globalchange/files/NCA%20regions_sm.png">
+            <div class="legend">
+              <ul>
+                <li>Legend: </li>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+              </ul>
+            </div>
+        </section>
+
+        <section id="panel-engagement" role="tabpanel" aria-labelledby="tab-engagement" hidden>
+            <h3>Engagement</h3>
+            <p>
+              {{ assessmentReport.engagement_summary}}
+            </p>
+            <h4>Current Opportunities</h3>
+            <p>
+              In vitae turpis massa sed. Et odio pellentesque diam volutpat commodo sed 
+              egestas egestas fringilla. Amet cursus sit amet dictum sit amet justo donec. Porta lorem mollis 
+              aliquam ut porttitor. Netus et malesuada fames ac turpis egestas sed tempus urna. Viverra tellus 
+              in hac habitasse.
+            </p>
+            <ul>
+              {%for item in assessmentReport.opportunities%}
+                <li><a href="">{{item.title}}</a></li>
+              {%endfor%}
+            </ul>
+            <p>
+                Netus et malesuada fames ac turpis egestas 
+                <a href="">slightly longer link.</a>
+            </p>
+            <h4>Recent Opportunities</h3>
+            <ul>
+              <li><a href="">Link</a></li>
+              <li><a href="">Link</a></li>
+              <li><a href="">Link</a></li>
+              <li><a href="">Link</a></li>
+            </ul>
+        </section>
+
+        <section id="panel-workshops" role="tabpanel" aria-labelledby="tab-workshops" hidden>
+            <h3>Workshops</h3>
+            <h4 class="workshop__month">January</h4>
+              {% include "components/prototype/collection/collection-workshops.md" %}
+        </section>
+
+        <section id="panel-faqs" role="tabpanel" aria-labelledby="tab-faqs" hidden>
+            <h3>NCA5 FAQs</h3>
+            {% include "components/prototype/accordion/accordion-faqs.md" %}
+        </section>
+
+        <section id="panel-timeline" role="tabpanel" aria-labelledby="tab-timeline" hidden>
+            <h3>Timeline</h3>
+            <ol class="usa-process-list">
+              <li class="usa-process-list__item">
+                <h4 class="usa-process-list__heading">2022</h4>
+                <ul>
+                  <li>
+                    <p>Date/ Time Period</p>
+                    <p>Event/ Milestone - Description lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo,
+                      ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio
+                      lorem non turpis.</p>
+                  </li>
+                  <li>
+                    <p>Date/ Time Period</p>
+                    <p>Event/ Milestone - Description nullam sit amet enim. Suspendisse id velit vitae ligula volutpat
+                      condimentum.</p>
+                  </li>
+                  <li>
+                    <p>Date/ Time Period</p>
+                    <p>Event/ Milestone - Date - Description aliquam erat volutpat. Sed quis velit.</p>
+                  </li>
+                </ul>
+              </li>
+              <li class="usa-process-list__item">
+                <h4 class="usa-process-list__heading">2023</h4>
+                <p>
+                  <ul>
+                    <li>
+                      <p>Date/ Time Period</p>
+                      <p>Event/ Milestone - Description lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non 
+                        turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam 
+                        erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien.
+                      </p>
+                    </li>
+                    <li>
+                      <p>Date/ Time Period</p>
+                      <p>Event/ Milestone - Event Description lorem ipsum dolor sit amet, consectetuer 
+                        adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id 
+                        pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat 
+                        condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus 
+                        pharetra posuere sapien.</p>
+                    </li>
+                  </ul>
+                </p>
+              </li>
+              <li class="usa-process-list__item">
+                <h4 class="usa-process-list__heading">2024</h4>
+                <ul>
+                  <li>
+                    <p>Date/ Time Period</p>
+                    <p>
+                      Event/ Milestone - Date - Event Description nullam sit amet enim. Suspendisse id velit vitae 
+                      ligula volutpatcondimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. 
+                      Vivamus pharetra posuere sapien.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+        </section> 
+
+    </div>
+    <div class="upcoming_events">
+        <h2>Upcoming Events</h2>
+        {% include "components/prototype/cards/event.md" %}
+        <a href="/">View all events <i class="fa-solid fa-arrow-right-long"></i></a>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll('[role="tab"]');
+  const panels = document.querySelectorAll('[role="tabpanel"]');
+
+  function activateTab(tab) {
+    const targetId = tab.getAttribute("aria-controls");
+
+    // reset tabs
+    tabs.forEach(t => {
+      t.setAttribute("aria-selected", "false");
+      t.parentElement.classList.remove("is-active");
+    });
+
+    // hide all panels
+    panels.forEach(p => {
+      p.hidden = true;
+    });
+
+    // activate clicked tab
+    tab.setAttribute("aria-selected", "true");
+    tab.parentElement.classList.add("is-active");
+
+    // show correct panel
+    const panel = document.getElementById(targetId);
+    if (panel) panel.hidden = false;
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", (e) => {
+      e.preventDefault();
+      activateTab(tab);
+    });
+  });
+
+  // IMPORTANT: initialize correct state on page load
+  const initialTab = document.querySelector('[role="tab"][aria-selected="true"]');
+  if (initialTab) {
+    activateTab(initialTab);
+  } else if (tabs.length) {
+    activateTab(tabs[0]);
+  }
+});
+</script>

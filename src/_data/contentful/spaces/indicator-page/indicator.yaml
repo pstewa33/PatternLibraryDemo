@@ -1,0 +1,81 @@
+---
+indicatorPage:
+- sys:
+    id: 5p3pDWYcz21YbbCEf6OOc
+    created_at: !ruby/object:DateTime 2023-02-15 00:40:10.694000000 Z
+    updated_at: !ruby/object:DateTime 2023-02-27 21:18:06.279000000 Z
+    content_type_id: indicatorPage
+    revision: 6
+  page_title: USGCRP Indicator Details - Annual Greenhouse Gas Index
+  date: !ruby/object:DateTime 2023-02-14
+  end_date: !ruby/object:DateTime 2023-05-14
+  headline_section: The Annual Greenhouse Gas Index (AGGI) is a measure of the capacity
+    of Earth’s atmosphere to trap heat as a result of the presence of long-lived greenhouse
+    gases. The AGGI provides standardized information about how human activity has
+    affected the climate system through greenhouse gas emissions.
+  opening_body:
+  - sys:
+    content: "The warming influence of greenhouse gases in the atmosphere has increased
+      substantially over the last several decades. In 2021, the AGGI was 1.49,
+      representing an increase of 49% since 1990, the base year for the Kyoto
+      Protocol (an international agreement in which countries pledged to reduce
+      greenhouse gas emissions to below 1990 levels). Carbon dioxide (CO₂) is
+      the largest contributor to radiative forcing. Year-to-year variations in
+      how much the AGGI value increases generally correspond to how much CO₂ increases
+      each year, because CO₂ is responsible for about two-thirds of the radiative
+      forcing among all greenhouse gases.\n\n"
+  body:
+    - sys: 
+      content: 'This indicator demonstrates the change in radiative forcing resulting
+        from changing concentrations of multiple greenhouse gases stored in Earth’s
+        atmosphere:'
+      list:
+      - sys:
+        value: carbon dioxide (CO₂)
+      - data:
+        value: methane (CH₄)
+      - data: 
+        value: nitrous oxide (N₂O)
+      - data:
+        value: chlorofluorocarbons (CFCs*)
+      - data:
+        value: hydrochlorofluorocarbons (HCFCs*)
+      - data:
+        value: hydrofluorocarbons (HFCs*)
+    - data:
+      value: "* The “CFC” grouping includes some other long-lived gases that are
+        not CFCs, but the CFCs account for the majority of the radiative forcing
+        in this category. The “HCFC” grouping includes the three most abundant HCFCs.
+        The “HFC” grouping includes the most abundant HFCs and SF6 for completeness.
+        See "
+      uri: https://gml.noaa.gov/aggi/aggi.html
+      link: The NOAA Annual Greenhouse Gas Index
+      end: " page for full details."
+    - data:
+      value: >
+        This indicator measures the average total radiative forcing of multiple long-lived, well mixed greenhouse gases, including the three most abundant: carbon dioxide, methane, and nitrous oxide. Due to their long lifetimes and because of transport by winds, these gases become well mixed throughout the global atmosphere. The results were calculated by the National Oceanic and Atmospheric Administration (NOAA) based on measured concentrations of the gases in the atmosphere, compared with the concentrations that were present around 1750 (a baseline concentration of 0 watts per square meter), before the Industrial Revolution began. Because each gas has a different ability to absorb and emit energy, this indicator converts the changes in greenhouse gas concentrations into a measure of the total radiative forcing (warming effect) caused by each gas. Radiative forcing is calculated in watts per square meter, which represents the size of the energy imbalance in the atmosphere. 
+      uri: https://www.epa.gov/climate-indicators/climate-change-indicators-climate-forcing
+      link: Learn more about radiative forcing.
+    - data:
+      uri: https://gml.noaa.gov/
+      link: NOAA's Global Monitoring Laboratory
+      value: >
+        provides high-precision measurements of the abundance and distribution of long-lived greenhouse gases that are used to calculate global average concentrations. Radiative forcing for each gas is computed from these concentrations, and total radiative forcing for all gases is used to calculate the AGGI. The atmospheric abundance and radiative forcing of the three main long-lived greenhouse gases (CO₂, CH₄, and N₂O) continue to increase. While the combined radiative forcing of these and all other greenhouse gases included in the AGGI rose 49% from 1990 to 2021 (by ~1.06 watts per square meter), carbon dioxide has accounted for about 80% of this increase (~0.85 watts per square meter), which makes it by far the biggest contributor to increases in climate forcing since 1990. Radiative forcing from methane has steadily increased since 2007, after having been nearly constant from 1999 to 2006. Owing to the Montreal Protocol, an international agreement signed in 1987, CFCs have been decreasing since the mid- to late 1990s after a long period of increase; however, the current warming influence from CFCs and related gases is still larger than that from HCFCs and HFCs. CFC replacements (HCFCs and HFCs) have been increasing since the phase-out of CFCs.
+  indicator:
+    - sys:
+        id: 65x5iJ0ccG6n02Pd88qr8P
+        created_at: !ruby/object:DateTime 2023-02-23 19:09:54.709000000 Z
+        updated_at: !ruby/object:DateTime 2023-02-23 19:09:54.709000000 Z
+      title: aggi 2022
+      description: ''
+      url: "//images.ctfassets.net/c5zrbffrgyn3/65x5iJ0ccG6n02Pd88qr8P/98077deda2553c4249bd1b2bc36f6ad6/aggi_2022.png"
+      media_meta_info: 'Caption: This indicator measures the average total radiative forcing of multiple long-lived, well mixed greenhouse gases, including the three most abundant: carbon dioxide, methane, and nitrous oxide. Decision makers can use this indicator to inform mitigation strategies.'
+  related_resources:
+  - sys:
+      id: 5GNRcCXf21Tqaa8YcTGTFG
+      created_at: !ruby/object:DateTime 2023-02-23 19:13:30.919000000 Z
+      updated_at: !ruby/object:DateTime 2023-02-23 19:13:30.919000000 Z
+      content_type_id: resourceDetailsPage
+      revision: 1
+    page_title: 'Climate.gov Climate Change: Annual Greenhouse Gas Index'
+---

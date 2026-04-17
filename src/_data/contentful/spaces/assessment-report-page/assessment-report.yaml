@@ -1,0 +1,126 @@
+assessmentReport:
+- sys:
+    id: 6bPHfBA9kfCBa9k5dwT5uE
+    created_at: !ruby/object:DateTime 2023-03-01 20:29:13.157000000 Z
+    updated_at: !ruby/object:DateTime 2023-03-01 20:29:13.157000000 Z
+    content_type_id: assessmentReport
+    revision: 1
+  id: Fifth National Climate Assessment
+  year: !ruby/object:DateTime 2022-02-01 00:00:00.000000000 Z
+  about: Development of the Fifth National Climate Assessment (NCA5) is currently
+    underway, with anticipated delivery in 2023. This content will be updated as new
+    information becomes available.
+  mandate: |-
+    The U.S. Global Change Research Program (USGCRP) was established by Presidential initiative in 1989 and mandated by Congress in the Global Change Research Act (GCRA) of 1990. Its mandate is to develop and coordinate “a comprehensive and integrated United States research program which will assist the Nation and the world to understand, assess, predict, and respond to human-induced and natural processes of global change.”
+
+    USGCRP comprises 13 federal agencies that conduct or use research on global change and its impacts on society. It functions under the direction of the Subcommittee on Global Change Research of the National Science and Technology Council’s Committee on Environment.
+
+    USGCRP has four major sets of responsibilities: (a) coordinating global change research across the Federal Government, (b) developing and distributing mandated products, (c) helping to inform decisions, and (d) facilitating international research coordination.
+
+    In addition to an annual report to Congress and a Strategic Plan, the GCRA mandates that USGCRP prepare and submit to the President and the Congress a quadrennial assessment, referred to as the National Climate Assessment (NCA), which:
+
+    Integrate[s], evaluate[s], and interpret[s] the findings of the Program and discuss[es] the scientific uncertainties associated with such findings
+
+    Analyze[s] the effects of global change on the natural environment, agriculture, energy production and use, land and water resources, transportation, human health and welfare, human social systems, and biological diversity
+
+    Analyze[s] current trends in global change, both human-induced and natural, and project[s] major trends for the subsequent 25 to 100 years
+  engagement_summary: 'USGCRP recognizes that a robust public engagement strategy
+    is vital to developing a National Climate Assessment that is relevant to its users.
+    The NCA5 process is designed to be transparent and inclusive, with opportunities
+    for public participation. '
+  opportunities:
+  - sys:
+      id: ddM6XRHEh0ulgZE9KNtvV
+      created_at: !ruby/object:DateTime 2023-03-01 20:22:13.881000000 Z
+      updated_at: !ruby/object:DateTime 2023-03-01 20:22:13.881000000 Z
+      content_type_id: assessmentReportOpportunities
+      revision: 1
+    opportunity_title: Technical Inputs
+  workshops:
+  - sys:
+      id: 7IpdK5qSHp75sIRafeIl54
+      created_at: !ruby/object:DateTime 2023-03-01 20:25:30.642000000 Z
+      updated_at: !ruby/object:DateTime 2023-03-01 20:25:30.642000000 Z
+      content_type_id: assessmentReportWorkshops
+      revision: 1
+    workshop_title: Human Social Systems
+    month: JAN
+    day: 11
+    workshop_date: !ruby/object:DateTime 2022-01-11 00:00:00.000000000 -05:00
+    summary: "Please join the authors of the Fifth National Climate Assessment for
+      a virtual \nworkshop to share your thoughts on the climate change-related issues
+      most \nimportant to include in the Human Social Systems chapter"
+    registration_link: N/A
+    agenda_pdf_attachment: https://downloads.globalchange.gov/nca5-resources/nca5_engagement_agendas/Human%20Social%20Systems%20PEW%20Agenda_Reformatted.docx.pdf
+  fa_qs:
+  - sys:
+      id: 29mtYYSdqLlnXjBNAIFLB3
+      created_at: !ruby/object:DateTime 2023-03-01 20:27:28.374000000 Z
+      updated_at: !ruby/object:DateTime 2023-03-01 20:27:28.374000000 Z
+      content_type_id: assessmentReportFaQs
+      revision: 1
+    section_label: NCA5 FAQs
+    list:
+      - sys:
+        label: What is the U.S. Global Change Research Program? What does it do?
+        content: >
+          The U.S. Global Change Research Program (USGCRP) was mandated by Congress in the
+          Global Change Research Act of 1990 (GCRA) to coordinate “a comprehensive and
+          integrated United States research program which will assist the Nation and the
+          world to understand, assess, predict, and respond to human-induced and natural
+          processes of global change.” USGCRP comprises 14 federal departments and agencies
+          that conduct or use research on global change and its impacts on society.
+      - sys:
+        label: What is the National Climate Assessment and why is it written?
+        content: >
+          The GCRA mandates that USGCRP deliver a quadrennial assessment, which has become known 
+          as theNational Climate Assessment (NCA). The NCA is required to a) integrate, evaluate,
+          and interpret the findings of the Program and discuss the scientific uncertainties
+          associated with such findings; b) analyze the effects of global change on the
+          natural environment, agriculture, energy production and use, land and water
+          resources, transportation, human health and welfare, human social systems, and
+          biological diversity; and c) analyze current trends in global change, both human-induced
+          and natural, and project major trends for the subsequent 25 to 100 years.
+      - sys:
+        label: How many NCAs are there?
+        content: >
+          To date, four NCAs have been released. The first NCA was
+          published in 2000, and the second was published in 2009. More information on
+          these reports can be accessed here. The third NCA, Climate Change Impacts in
+          the United States, was published in 2014 and can be accessed here. The fourth
+          NCA (NCA4) was delivered in two volumes, the Climate Science Special Report
+          (CSSR) and Impacts, Risks, and Adaptation in the United States. It was completed
+          in 2018.
+      - sys:
+        label: NCA4 was released in two parts. Will that be the case for NCA5?
+        content: >
+          Volume I of NCA4, the CSSR, was a comprehensive update on the state of the 
+          science of climate change and its impacts. It was not intended to be a regular part
+          of the NCA development process. \n\nNCA5 will draw heavily on the CSSR and,
+          similar to previous NCAs, include chapters that focus on the state of the science
+          of climate and global change, responding fully to the GCRA mandate.
+      - sys:
+        label: Will NCA5 offer policy recommendations?
+        content: >
+          Consistent with common practice for USGCRP assessment products, NCA5 will be a technical 
+          scientific assessment. It willnot make policy recommendations or evaluate existing or 
+          proposed policies.
+      - sys:
+        label: When will NCA5 be released?
+        content: >
+          NCA5 is currently expected to be released in late 2023. USGCRP respects the quadrennial 
+          mandate, and will work to ensure the assessment is completed as close as possible to 
+          that timeline while providing authors and staff the time to develop a comprehensive, 
+          transparent, and authoritative scientific assessment. See the current timeline for more information.
+  timeline:
+  - sys:
+      id: 5YFy1mjgUPrHHlfbDrZSKv
+      created_at: !ruby/object:DateTime 2023-03-01 20:28:51.486000000 Z
+      updated_at: !ruby/object:DateTime 2023-03-01 20:28:51.486000000 Z
+      content_type_id: assessmentReportTimeline
+      revision: 1
+    date: !ruby/object:DateTime 2020-02-01 00:00:00.000000000 Z
+    content: 'February 2020 - Fall 2023
+
+      '
+---

@@ -6,6 +6,12 @@ module.exports = function(eleventyConfig) {
   // --- Passthrough for assets ---
   eleventyConfig.addPassthroughCopy({"src/assets/css": "assets/css"});
 
+  // --- Passthrough for Images ---
+  eleventyConfig.addPassthroughCopy({"src/assets/images": "assets/images"});
+
+  // --- Passthrough for USWDS Imgs ---
+    eleventyConfig.addPassthroughCopy({"src/assets/img": "assets/img"});
+
   // --- Raw file filter ---
   eleventyConfig.addFilter("rawFile", function(filePath) {
     const fullPath = path.join("src/_includes/", filePath);
@@ -38,13 +44,16 @@ module.exports = function(eleventyConfig) {
       .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
   });
 
+  console.log("INPUT DIR:", __dirname);
+
   // --- Directory structure ---
   return {
     dir: {
       input: "src",
       output: "_site",
       includes: "_includes",
-      layouts: "_includes/layouts"
+      layouts: "_includes/layouts",
+      data: "_data"
     }
   };
 };

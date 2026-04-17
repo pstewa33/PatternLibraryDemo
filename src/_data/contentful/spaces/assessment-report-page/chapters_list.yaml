@@ -1,0 +1,133 @@
+---
+chaptersList:
+- sys:
+    id: 1Cif3zMd2fsUpDM7PW7Tpr
+    created_at: !ruby/object:DateTime 2023-03-02 16:54:48.855000000 Z
+    updated_at: !ruby/object:DateTime 2023-03-02 16:54:48.855000000 Z
+    content_type_id: chaptersList
+    revision: 1
+  section_label: NCA5 Chapters
+  chapters:
+  - sys:
+    chapter: Overview/Summary Findings
+    content:
+  - sys:
+    chapter: Earth System
+    content:  
+  - sys:
+    chapter: Climate Trends
+    content:
+  - sys:
+    chapter: Earth Systems Processes
+    content: 
+  - sys:
+    chapter: National Topics
+    content:
+  - sys:
+    chapter: Energy Supply, Delivery, and Demand
+    content:  
+  - sys:
+    chapter: Land Cover and Land-Use Change
+    content:
+  - sys:
+    chapter: Forests
+    content: 
+  - sys:
+    chapter: Ecosystems, Ecosystem Services, and Biodiversity
+    content:
+  - sys:
+    chapter: Water
+    content:  
+  - sys:
+    chapter: Coastal Effects
+    content:
+  - sys:
+    chapter: Oceans and Marine Resources
+    content: 
+  - sys:
+    chapter: Agriculture, Food Systems, and Rural Communities
+    content:
+  - sys:
+    chapter: Built Environment, Urban Systems, and Cities
+    content:  
+  - sys:
+    chapter: Transportation
+    content:
+  - sys:
+    chapter: Air Quality
+    content: 
+  - sys:
+    chapter: Human Health
+    content:
+  - sys:
+    chapter: Tribes and Indigenous Peoples
+    content:  
+  - sys:
+    chapter: Climate Effects on U.S. International Interests
+    content:
+  - sys:
+    chapter: Sector Interactions, Multiple Stressors, and Complex Systems
+    content: 
+  - sys:
+    chapter: Economics*
+    content:
+  - sys:
+    chapter: Human Social Systems*
+    content:  
+  - sys:
+    chapter: Regions
+    content:
+  - sys:
+    chapter: Northeast
+    content: 
+  - sys:
+    chapter: Southeast
+    content:
+  - sys:
+    chapter: U.S. Caribbean
+    content:  
+  - sys:
+    chapter: Midwest
+    content:
+  - sys:
+    chapter: Northern Great Plains
+    content: 
+  - sys:
+    chapter: Southern Great Plains \n- Northwest
+    content:
+  - sys:
+    chapter: Southwest
+    content:  
+  - sys:
+    chapter: Alaska
+    content:
+  - sys:
+    chapter: Hawai'i and U.S.-Affiliated Pacific Islands
+    content: 
+  - sys:
+    chapter: Response
+    content:
+  - sys:
+    chapter: Adaptation
+    content:  
+  - sys:
+    chapter: Mitigation
+    content:
+  - sys:
+    chapter: Appendices
+    content: 
+  - sys:
+    chapter: Process
+    content:
+  - sys:
+    chapter: Information Quality
+    content:  
+  - sys:
+    chapter: Scenarios and Datasets
+    content:
+  - sys:
+    chapter: Indicators*
+    content: 
+  before: Subject to change
+  after: "*New chapters"
+---

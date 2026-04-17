@@ -209,6 +209,15 @@ h1 {
 .basic-tabs {
   border-top: 1px solid #ddd;
   margin-top: 2rem;
+
+  li{
+    padding: 1rem;
+  }
+  
+  a{
+    text-decoration: none;
+    color:#003366;
+  }
 }
 
 .tabs__tab-list {
@@ -218,6 +227,16 @@ h1 {
   padding: 0;
   margin: 0 0 1rem;
   border-bottom: 1px solid #ddd;
+
+  li.is-active{
+    background-color: #005ea2;
+    border-radius: 4px 4px 0 0;
+
+    a{
+      color: white;
+    }
+  }
+
 }
 
 .tabs__trigger {

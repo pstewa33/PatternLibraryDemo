@@ -33868,6 +33868,13 @@ h1 {
   border-top: 1px solid #ddd;
   margin-top: 2rem;
 }
+.basic-tabs li {
+  padding: 1rem;
+}
+.basic-tabs a {
+  text-decoration: none;
+  color: #003366;
+}
 
 .tabs__tab-list {
   display: flex;
@@ -33876,6 +33883,13 @@ h1 {
   padding: 0;
   margin: 0 0 1rem;
   border-bottom: 1px solid #ddd;
+}
+.tabs__tab-list li.is-active {
+  background-color: #005ea2;
+  border-radius: 4px 4px 0 0;
+}
+.tabs__tab-list li.is-active a {
+  color: white;
 }
 
 .tabs__trigger {

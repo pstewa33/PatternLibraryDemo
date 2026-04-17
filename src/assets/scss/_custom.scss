@@ -187,3 +187,53 @@ h1 {
     color: white;
   }
 }
+
+// Assessment specific styles
+
+.workshop__collection{
+  padding-bottom: 20px;
+}
+
+.legend ul{
+  border: solid 1px #ddd;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.upcoming_events{
+  margin-bottom: 2rem;
+}
+
+//Tab Styles
+
+.basic-tabs {
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+}
+
+.tabs__tab-list {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabs__trigger {
+  background: none;
+  border: none;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  border-bottom: 3px solid transparent;
+}
+
+.tabs__trigger[aria-selected="true"] {
+  border-bottom: 3px solid #005ea2; /* USWDS blue */
+  color: #005ea2;
+}
+
+.tabs__panel {
+  padding: 1rem 0;
+}

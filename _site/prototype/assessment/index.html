@@ -196,17 +196,44 @@
     </div>
     <div class="tabs basic-tabs">
         <ul role="tablist" class="tabs__tab-list">
-            <li role="presentation"><a href="#Overview" role="tab" aria-controls="overview" class="tabs__trigger basic-tab-trigger">Overview</a></li>
-            <li role="presentation"><a href="#Mandate" role="tab" aria-controls="Mandate" class="tabs__trigger basic-tab-trigger">Mandate</a></li>
-            <li role="presentation"><a href="#Chapters" role="tab" aria-controls="Chapters" class="tabs__trigger basic-tab-trigger">Chapters</a></li>
-            <li role="presentation"><a href="#Roles" role="tab" aria-controls="Roles" class="tabs__trigger basic-tab-trigger">Roles</a></li>
-            <li role="presentation"><a href="#Regions" role="tab" aria-controls="Regions" class="tabs__trigger basic-tab-trigger">Regions</a></li>
-            <li role="presentation"><a href="#Engagement" role="tab" aria-controls="Engagement" class="tabs__trigger basic-tab-trigger">Engagement</a></li>
-            <li role="presentation"><a href="#Workshops" role="tab" aria-controls="Workshops" class="tabs__trigger basic-tab-trigger">Workshops</a></li>
-            <li role="presentation"><a href="#FAQs" role="tab" aria-controls="FAQs" class="tabs__trigger basic-tab-trigger">FAQs</a></li>
-            <li role="presentation"><a href="#Timeline" role="tab" aria-controls="Timeline" class="tabs__trigger basic-tab-trigger">Timeline</a></li>
+            <li role="presentation">
+                <a href="#panel-overview" role="tab" aria-controls="panel-overview" aria-selected="true">Overview</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#panel-mandate" role="tab" aria-controls="panel-mandate" aria-selected="false">Mandate</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#panel-chapters" role="tab" aria-controls="panel-chapters" aria-selected="false">Chapters</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#panel-roles" role="tab" aria-controls="panel-roles" aria-selected="false">Roles</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#panel-regions" role="tab" aria-controls="panel-regions" aria-selected="false">Regions</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#panel-engagement" role="tab" aria-controls="panel-engagement" aria-selected="false">Engagement</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#panel-workshops" role="tab" aria-controls="panel-workshops" aria-selected="false">Workshops</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#panel-faqs" role="tab" aria-controls="panel-faqs" aria-selected="false">FAQs</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#panel-timeline" role="tab" aria-controls="panel-timeline" aria-selected="false">Timeline</a>
+            </li>
         </ul>
-        <section id="overview" role="tabpanel" class="tabs__panel basic-tab-panel">
+
+        <section id="panel-overview" role="tabpanel" aria-labelledby="tab-overview">
             
               <h4>Upcoming</h4>
               <ul class="usa-card-group">
@@ -267,7 +294,8 @@
               <a href=""><li>link three</li></a>
             </ul>
         </section>
-        <section id="Mandate" role="tabpanel" class="tabs__panel basic-tab-panel">
+
+        <section id="panel-mandate" role="tabpanel" aria-labelledby="tab-mandate" hidden>
             <h3>Mandate</h3>
             <p>
               The U.S. Global Change Research Program (USGCRP) was established by Presidential initiative in 1989 and mandated by Congress in the Global Change Research Act (GCRA) of 1990. Its mandate is to develop and coordinate a comprehensive and integrated United States research program to understand, assess, predict, and respond to global change.
@@ -281,11 +309,11 @@ The GCRA also mandates a quadrennial National Climate Assessment (NCA), which:
 - Analyzes impacts across sectors like agriculture, energy, transportation, and health
 - Projects trends over the next 25–100 years
             </p>
-          </section>
-          <section id="Chapters" role="tabpanel" class="tabs__panel basic-tab-panel">
-            <h3>NCA5 Chapters</h3>
-            <p style="padding-bottom: 1rem; font-style: italic;">Subject to change</p>
-            <div class="usa-accordion">
+        </section>
+
+        <section id="panel-chapters" role="tabpanel" aria-labelledby="tab-chapters" hidden>
+          <h3>NCA5 Chapters</h3>
+          <div class="usa-accordion">
   
     <h4 class="usa-accordion__heading">
       <button
@@ -848,9 +876,9 @@ The GCRA also mandates a quadrennial National Climate Assessment (NCA), which:
     </div>
   
 </div>
-            <p style="padding-top: 1rem; font-style: italic;">*New chapters</p>
-          </section>
-          <section id="Roles" role="tabpanel" class="tabs__panel basic-tab-panel">
+        </section>
+
+        <section id="panel-roles" role="tabpanel" aria-labelledby="tab-roles" hidden>
             <h3>NCA5 Participant Roles and Responsibilities</h3>
             <div class="usa-accordion">
   
@@ -960,8 +988,9 @@ The GCRA also mandates a quadrennial National Climate Assessment (NCA), which:
     </div>
   
 </div>
-          </section>
-          <section id="Regions" role="tabpanel" class="tabs__panel basic-tab-panel">
+        </section>
+
+        <section id="panel-regions" role="tabpanel" aria-labelledby="tab-regions" hidden>
             <h3>Regions</h3>
             <p>
               NCA5 will assess current and future risks posed by climate change to each of NCA’s 10 regions, illustrated below.
@@ -976,8 +1005,9 @@ The GCRA also mandates a quadrennial National Climate Assessment (NCA), which:
                 <li>Item 3</li>
               </ul>
             </div>
-          </section>
-                    <section id="Engagement" role="tabpanel" class="tabs__panel basic-tab-panel">
+        </section>
+
+        <section id="panel-engagement" role="tabpanel" aria-labelledby="tab-engagement" hidden>
             <h3>Engagement</h3>
             <p>
               
@@ -1005,8 +1035,9 @@ The GCRA also mandates a quadrennial National Climate Assessment (NCA), which:
               <li><a href="">Link</a></li>
               <li><a href="">Link</a></li>
             </ul>
-          </section>
-          <section id="Workshops" role="tabpanel" class="tabs__panel basic-tab-panel">
+        </section>
+
+        <section id="panel-workshops" role="tabpanel" aria-labelledby="tab-workshops" hidden>
             <h3>Workshops</h3>
             <h4 class="workshop__month">January</h4>
               <div class="grid-row grid-gap">
@@ -1045,10 +1076,11 @@ The GCRA also mandates a quadrennial National Climate Assessment (NCA), which:
     </ul>
   </div>
 </div>
-            </section>
-            <section id="FAQs" role="tabpanel" class="tabs__panel basic-tab-panel">
-                <h3>NCA5 FAQs</h3>
-                <div class="usa-accordion">
+        </section>
+
+        <section id="panel-faqs" role="tabpanel" aria-labelledby="tab-faqs" hidden>
+            <h3>NCA5 FAQs</h3>
+            <div class="usa-accordion">
     
         
         <h4 class="usa-accordion__heading">
@@ -1131,8 +1163,9 @@ The GCRA also mandates a quadrennial National Climate Assessment (NCA), which:
         </div>
     
 </div>
-          </section>
-          <section id="Timeline" role="tabpanel" class="tabs__panel basic-tab-panel">
+        </section>
+
+        <section id="panel-timeline" role="tabpanel" aria-labelledby="tab-timeline" hidden>
             <h3>Timeline</h3>
             <ol class="usa-process-list">
               <li class="usa-process-list__item">
@@ -1193,9 +1226,11 @@ The GCRA also mandates a quadrennial National Climate Assessment (NCA), which:
               </li>
             </ol>
         </section> 
+
     </div>
-    <h2>Upcoming Events</h2>
-    <ul class="usa-card-group">
+    <div class="upcoming_events">
+        <h2>Upcoming Events</h2>
+        <ul class="usa-card-group">
   
     <li class="usa-card tablet:grid-col-4">
       <div class="usa-card__container">
@@ -1234,10 +1269,54 @@ The GCRA also mandates a quadrennial National Climate Assessment (NCA), which:
   </li>
   
 </ul>
-    <a href="/">View all events <i class="fa-solid fa-arrow-right-long"></i></a>
+        <a href="/">View all events <i class="fa-solid fa-arrow-right-long"></i></a>
+    </div>
 </div>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll('[role="tab"]');
+  const panels = document.querySelectorAll('[role="tabpanel"]');
 
+  function activateTab(tab) {
+    const targetId = tab.getAttribute("aria-controls");
+
+    // reset tabs
+    tabs.forEach(t => {
+      t.setAttribute("aria-selected", "false");
+      t.parentElement.classList.remove("is-active");
+    });
+
+    // hide all panels
+    panels.forEach(p => {
+      p.hidden = true;
+    });
+
+    // activate clicked tab
+    tab.setAttribute("aria-selected", "true");
+    tab.parentElement.classList.add("is-active");
+
+    // show correct panel
+    const panel = document.getElementById(targetId);
+    if (panel) panel.hidden = false;
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", (e) => {
+      e.preventDefault();
+      activateTab(tab);
+    });
+  });
+
+  // IMPORTANT: initialize correct state on page load
+  const initialTab = document.querySelector('[role="tab"][aria-selected="true"]');
+  if (initialTab) {
+    activateTab(initialTab);
+  } else if (tabs.length) {
+    activateTab(tabs[0]);
+  }
+});
+</script>
 
     <footer class="usa-footer footer-gc">
   <div class="grid-container usa-footer__return-to-top">

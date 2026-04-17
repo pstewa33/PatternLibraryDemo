@@ -35,18 +35,160 @@ layout: base-proto.njk
         <section id="overview" role="tabpanel" class="tabs__panel basic-tab-panel">
             {% if cards %}
               <h4>Upcoming</h4>
-              {% include "components/prototype/cards/event.html" %}
+              {% include "components/prototype/cards/event.md" %}
               <a href="/">View all events <i class="fa-solid fa-arrow-right-long"></i></a>
             {% endif %}
             <h3>About NCA5</h3>
             <p>
                 {{ assessmentReport.id }}
             </p>
-
+            <h4>Previous Assessments</h4>
+            <ul>
+              <a href=""><li>link one</li></a>
+              <a href=""><li>link two</li></a>
+              <a href=""><li>link three</li></a>
+            </ul>
+            <h4>Sustained Resources</h4>
+            <ul>
+              <a href=""><li>link one</li></a>
+              <a href=""><li>link two</li></a>
+              <a href=""><li>link three</li></a>
+            </ul>
+        </section>
+        <section id="Mandate" role="tabpanel" class="tabs__panel basic-tab-panel">
+            <h3>Mandate</h3>
+            <p>
+              {{ assessmentReport.mandate }}
+            </p>
+          </section>
+          <section id="Chapters" role="tabpanel" class="tabs__panel basic-tab-panel">
+            <h3>{{ chaptersList.section_label}}</h3>
+            <p style="padding-bottom: 1rem; font-style: italic;">{{ chaptersList.before }}</p>
+            {% include "components/prototype/accordion/accordion-chapters.md" %}
+            <p style="padding-top: 1rem; font-style: italic;">{{ chaptersList.after }}</p>
+          </section>
+          <section id="Roles" role="tabpanel" class="tabs__panel basic-tab-panel">
+            <h3>{{ rolesAndResponsibilitiesList.section_label }}</h3>
+            {% include "components/prototype/accordion/accordion-roles.md" %}
+          </section>
+          <section id="Regions" role="tabpanel" class="tabs__panel basic-tab-panel">
+            <h3>Regions</h3>
+            <p>
+              NCA5 will assess current and future risks posed by climate change to each of NCA’s 10 regions, illustrated below.
+            </p>
+            <img alt="NCA5 Regions Map" class="regions-img" 
+            src="https://www.globalchange.gov/sites/globalchange/files/NCA%20regions_sm.png">
+            <div class="legend">
+              <ul>
+                <li>Legend: </li>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+              </ul>
+            </div>
+          </section>
+                    <section id="Engagement" role="tabpanel" class="tabs__panel basic-tab-panel">
+            <h3>Engagement</h3>
+            <p>
+              {{ assessmentReport.engagement_summary}}
+            </p>
+            <h4>Current Opportunities</h3>
+            <p>
+              In vitae turpis massa sed. Et odio pellentesque diam volutpat commodo sed 
+              egestas egestas fringilla. Amet cursus sit amet dictum sit amet justo donec. Porta lorem mollis 
+              aliquam ut porttitor. Netus et malesuada fames ac turpis egestas sed tempus urna. Viverra tellus 
+              in hac habitasse.
+            </p>
+            <ul>
+              {%for item in assessmentReport.opportunities%}
+                <li><a href="">{{item.title}}</a></li>
+              {%endfor%}
+            </ul>
+            <p>
+                Netus et malesuada fames ac turpis egestas 
+                <a href="">slightly longer link.</a>
+            </p>
+            <h4>Recent Opportunities</h3>
+            <ul>
+              <li><a href="">Link</a></li>
+              <li><a href="">Link</a></li>
+              <li><a href="">Link</a></li>
+              <li><a href="">Link</a></li>
+            </ul>
+          </section>
+          <section id="Workshops" role="tabpanel" class="tabs__panel basic-tab-panel">
+            <h3>Workshops</h3>
+            <h4 class="workshop__month">January</h4>
+              {% include "components/prototype/collection/collection-workshops.md" %}
+            </section>
+            <section id="FAQs" role="tabpanel" class="tabs__panel basic-tab-panel">
+                <h3>NCA5 FAQs</h3>
+                {% include "components/prototype/accordion/accordion-faqs.md" %}
+          </section>
+          <section id="Timeline" role="tabpanel" class="tabs__panel basic-tab-panel">
+            <h3>Timeline</h3>
+            <ol class="usa-process-list">
+              <li class="usa-process-list__item">
+                <h4 class="usa-process-list__heading">2022</h4>
+                <ul>
+                  <li>
+                    <p>Date/ Time Period</p>
+                    <p>Event/ Milestone - Description lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo,
+                      ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio
+                      lorem non turpis.</p>
+                  </li>
+                  <li>
+                    <p>Date/ Time Period</p>
+                    <p>Event/ Milestone - Description nullam sit amet enim. Suspendisse id velit vitae ligula volutpat
+                      condimentum.</p>
+                  </li>
+                  <li>
+                    <p>Date/ Time Period</p>
+                    <p>Event/ Milestone - Date - Description aliquam erat volutpat. Sed quis velit.</p>
+                  </li>
+                </ul>
+              </li>
+              <li class="usa-process-list__item">
+                <h4 class="usa-process-list__heading">2023</h4>
+                <p>
+                  <ul>
+                    <li>
+                      <p>Date/ Time Period</p>
+                      <p>Event/ Milestone - Description lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non 
+                        turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam 
+                        erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien.
+                      </p>
+                    </li>
+                    <li>
+                      <p>Date/ Time Period</p>
+                      <p>Event/ Milestone - Event Description lorem ipsum dolor sit amet, consectetuer 
+                        adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id 
+                        pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat 
+                        condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus 
+                        pharetra posuere sapien.</p>
+                    </li>
+                  </ul>
+                </p>
+              </li>
+              <li class="usa-process-list__item">
+                <h4 class="usa-process-list__heading">2024</h4>
+                <ul>
+                  <li>
+                    <p>Date/ Time Period</p>
+                    <p>
+                      Event/ Milestone - Date - Event Description nullam sit amet enim. Suspendisse id velit vitae 
+                      ligula volutpatcondimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. 
+                      Vivamus pharetra posuere sapien.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+        </section> 
     </div>
+    <h2>Upcoming Events</h2>
+    {% include "components/prototype/cards/event.md" %}
+    <a href="/">View all events <i class="fa-solid fa-arrow-right-long"></i></a>
 </div>
 
-<h2>Upcoming Events</h2>
-{% include "components/prototype/cards/event.html" %}
-
-<a href="/">View all events <i class="fa-solid fa-arrow-right-long"></i></a>

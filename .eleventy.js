@@ -4,13 +4,9 @@ const path = require("path");
 
 module.exports = function(eleventyConfig) {
   // --- Passthrough for assets ---
-  eleventyConfig.addPassthroughCopy({"src/assets/css": "assets/css"});
-
-  // --- Passthrough for Images ---
-  eleventyConfig.addPassthroughCopy({"src/assets/images": "assets/images"});
-
-  // --- Passthrough for USWDS Imgs ---
-    eleventyConfig.addPassthroughCopy({"src/assets/img": "assets/img"});
+  eleventyConfig.addPassthroughCopy({ "src/assets/css": "assets/css" });
+  eleventyConfig.addPassthroughCopy({ "src/assets/images": "assets/images" });
+  eleventyConfig.addPassthroughCopy({ "src/assets/img": "assets/img" });
 
   // --- Raw file filter ---
   eleventyConfig.addFilter("rawFile", function(filePath) {
@@ -20,9 +16,9 @@ module.exports = function(eleventyConfig) {
 
   // --- Markdown filter ---
   const md = markdownIt({
-    html: true,      // allow HTML in Markdown
-    breaks: true,    // treat newlines as <br>
-    linkify: true    // auto-link URLs
+    html: true,
+    breaks: true,
+    linkify: true
   });
 
   eleventyConfig.addFilter("markdownify", function(value) {
@@ -30,16 +26,21 @@ module.exports = function(eleventyConfig) {
   });
 
   // --- Components collection ---
-  // Only include pages in src/pages/components/*.md that do NOT have excludeFromComponents: true
   eleventyConfig.addCollection("components", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/pages/components/*.md")
+    return collectionApi
+      .getFilteredByTag("components")
       .filter(item => !item.data.excludeFromComponents)
-      .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
+      .sort((a, b) => {
+        const titleA = (a.data.title || "").toLowerCase();
+        const titleB = (b.data.title || "").toLowerCase();
+        return titleA.localeCompare(titleB);
+      });
   });
 
   // --- Templates collection ---
   eleventyConfig.addCollection("templates", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/pages/templates/*.md")
+    return collectionApi
+      .getFilteredByGlob("src/pages/templates/*.md")
       .filter(item => !item.data.excludeFromTemplates)
       .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
   });

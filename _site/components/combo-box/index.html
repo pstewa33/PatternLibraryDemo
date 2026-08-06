@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Combo Box</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/css/uswds.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body class="page-content">
+    <div class="library-navbar">
+      <div class="usa-logo" id="basic-logo">
+        <a href="/"><em class="usa-logo__text">USWDS Component Library</em></a>
+      </div>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="/library/components/">Component Library</a></li>
+        <li><a class="nav-link" href="/library/templates/">Templates</a></li>
+      </ul>
+    </div>
+    <div class="grid-container-widescreen">
+      <div class="grid-row grid-gap">
+        <aside class="tablet:grid-col-3">
+          <ul class="sidebar-nav">
+            
+              
+                <li><a href="/library/components/accordion/">Accordion</a></li>
+              
+            
+              
+                <li><a href="/components/alert/">Alert</a></li>
+              
+            
+              
+                <li><a href="/components/banner/">Banner</a></li>
+              
+            
+              
+                <li><a href="/components/breadcrumb/">Breadcrumb</a></li>
+              
+            
+              
+                <li><a href="/components/button/">Buttons</a></li>
+              
+            
+              
+                <li><a href="/library/components/card/">Card</a></li>
+              
+            
+              
+                <li><a href="/components/character-count/">Character Count</a></li>
+              
+            
+              
+                <li><a href="/components/checkbox/">Checkbox</a></li>
+              
+            
+              
+                <li><a href="/components/collection/">Collection</a></li>
+              
+            
+              
+                <li><a href="/components/combo-box/">Combo Box</a></li>
+              
+            
+              
+                <li><a href="/components/date-picker/">Date Picker</a></li>
+              
+            
+              
+                <li><a href="/components/date-range-picker/">Date Range Picker</a></li>
+              
+            
+              
+                <li><a href="/components/file-input/">File Input</a></li>
+              
+            
+              
+                <li><a href="/components/footer/">Footer</a></li>
+              
+            
+              
+                <li><a href="/components/header/">Header</a></li>
+              
+            
+              
+                <li><a href="/components/icon-list/">Icon List</a></li>
+              
+            
+              
+                <li><a href="/components/identifier/">Identifier</a></li>
+              
+            
+              
+                <li><a href="/components/in-page-nav/">In-page Navigation</a></li>
+              
+            
+              
+                <li><a href="/components/memorable-date/">Memorable Date</a></li>
+              
+            
+              
+                <li><a href="/components/modal/">Modal</a></li>
+              
+            
+              
+                <li><a href="/components/process-list/">Process List</a></li>
+              
+            
+              
+                <li><a href="/components/radio-button/">Radio Button</a></li>
+              
+            
+              
+                <li><a href="/components/range-slider/">Range Slider</a></li>
+              
+            
+              
+                <li><a href="/components/search/">Search</a></li>
+              
+            
+              
+                <li><a href="/components/side-navigation/">Side Navigation</a></li>
+              
+            
+              
+                <li><a href="/components/site-alert/">Site Alert</a></li>
+              
+            
+              
+                <li><a href="/components/step-indicator/">Step Indicator</a></li>
+              
+            
+              
+                <li><a href="/components/summary-box/">Summary Box</a></li>
+              
+            
+              
+                <li><a href="/components/table/">Table</a></li>
+              
+            
+              
+                <li><a href="/components/tabs/">Tabs</a></li>
+              
+            
+              
+                <li><a href="/components/tag/">Tag</a></li>
+              
+            
+              
+                <li><a href="/components/text-input/">Text Input</a></li>
+              
+            
+              
+                <li><a href="/components/tooltip/">Tooltip</a></li>
+              
+            
+              
+                <li><a href="/components/validation/">Validation</a></li>
+              
+            
+          </ul>
+        </aside>
+        <main class="tablet:grid-col-9">
+          <h1>Combo Box</h1>
+          <p>A combo box helps users select an item from a large list of options.</p>
+          <!-- Component preview -->
+          <h2> Component Preview </h2>
+          
+            <p style="color:red;">No component path provided</p>
+          
+          <div class="guidance">
+            <h2>Guidance</h2>
+            
+          </div>
+          <div class="settings-table">
+            <h3>Combo Box Settings</h3>
+            <table class="usa-table usa-table--borderless">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+              </tbody>
+            </table>
+          </div>
+          <div class="variant-settings-table">
+            <h3>Combo Box Variants</h3>
+            <table class="usa-table usa-table--borderless">
+              <thead>
+                <tr>
+                  <th scope="col">Variant</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- USWDS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/js/uswds.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const links = document.querySelectorAll(".nav-link, .sidebar-nav a");
+      const path = window.location.pathname;
+
+      links.forEach(link => {
+        // Normalize trailing slash
+        let href = link.getAttribute("href");
+        if (!href.endsWith("/")) href += "/";
+
+        if (path.startsWith(href)) {
+          link.classList.add("active");
+          link.setAttribute("aria-current", "page");
+        }
+      });
+    });
+    </script>
+  </body>
+</html>

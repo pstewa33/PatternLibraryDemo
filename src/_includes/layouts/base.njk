@@ -8,7 +8,9 @@
   </head>
   <body>
     {% include "partials/library/nav.html" %}
-    {{ content | safe }}
+    <main class="grid-container">
+      {{ content | safe }}
+    </main>
 
     <!-- USWDS JS -->
     <script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.2.0/dist/js/uswds.min.js"></script>
